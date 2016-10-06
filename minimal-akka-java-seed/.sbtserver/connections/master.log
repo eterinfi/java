@@ -1,0 +1,19 @@
+New log file opened at Thu Oct 06 17:55:31 CST 2016 by 5264@idea-PC-Rui
+Taking next connection to: 51558
+New client attempting to connect on port: 51559-51558
+  Address = /192.168.0.11:51558
+This client on port 51559 has uuid 2b470e64-5395-44a5-ad06-c0e19b32c2a5 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-2b470e64-5395-44a5-ad06-c0e19b32c2a5
+Taking next connection to: 51558
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51558
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51558
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 5264@idea-PC-Rui logs at Thu Oct 06 18:04:32 CST 2016, goodbye.

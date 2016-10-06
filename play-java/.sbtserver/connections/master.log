@@ -1,0 +1,34 @@
+New log file opened at Thu Oct 06 17:31:38 CST 2016 by 2512@idea-PC-Rui
+Taking next connection to: 51289
+New client attempting to connect on port: 51290-51289
+  Address = /192.168.0.11:51289
+This client on port 51290 has uuid 710d41f2-2067-4221-abc0-fdba7844ec74 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-710d41f2-2067-4221-abc0-fdba7844ec74
+Taking next connection to: 51289
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51289
+New client attempting to connect on port: 51351-51289
+  Address = /192.168.0.11:51289
+Handshake exception on socket: 51351
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 51289
+New client attempting to connect on port: 51352-51289
+  Address = /192.168.0.11:51289
+This client on port 51352 has uuid 3be8b1a1-5969-4942-ac16-de02950e437e configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-710d41f2-2067-4221-abc0-fdba7844ec74, play-fork-run-3be8b1a1-5969-4942-ac16-de02950e437e
+Taking next connection to: 51289
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 2512@idea-PC-Rui logs at Thu Oct 06 17:39:05 CST 2016, goodbye.

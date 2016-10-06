@@ -1,0 +1,5 @@
+[debug] Running TaskDef(com.example.PingPongActorTest, com.novocode.junit.JUnitFingerprint@4f182190, false, [SuiteSelector])
+[debug] Summary for JUnit not available.
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[debug] Passed tests:
+[debug] 	com.example.PingPongActorTest
