@@ -1,0 +1,36 @@
+package data.structures;
+
+import java.util.*;
+
+public class MapTraversalDemo {
+
+	public static void main(String[] args) {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("1", "value1");
+		map.put("2", "value2");
+		map.put("3", "value3");
+		
+		// Way 1:
+		System.out.println("Traverse keys & values by Map.keySet: ");
+		for (String key : map.keySet())
+			System.out.println("key= " + key + " and value= " + map.get(key));
+		
+		// Way 2:
+		System.out.println("Traverse keys & values by Map.entrySet using Iterator: ");
+		Iterator<Map.Entry<String, String>> it = map.entrySet().iterator();
+		while (it.hasNext()) {
+			Map.Entry<String, String> entry = it.next();
+			System.out.println("key= " + entry.getKey() + " and value= " + entry.getValue());
+		}
+		
+		// Way 3: Recommended, especially for large capacity
+		System.out.println("Traverse keys & values by Map.entrySet");
+		for (Map.Entry<String, String> entry : map.entrySet())
+			System.out.println("key= " + entry.getKey() + " and value= " + entry.getValue());
+		
+		// Way 4:
+		System.out.println("Traverse values without keys by Map.values");
+		for (String value : map.values())
+			System.out.println("value= " + value);
+	}
+}

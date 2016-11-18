@@ -1,0 +1,14 @@
+package datatype.generics;
+
+import java.util.*;
+
+public class GenericWildcardDemo {
+
+	public static void main(String[] args) {
+		List<String> name = new ArrayList<String>();
+		List<Integer> age = new ArrayList<Integer>();
+		List<Number> number = new ArrayList<Number>();
+
+	}
+
+}

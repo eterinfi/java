@@ -1,0 +1,10 @@
+package date.type.regex.matcher;
+
+public class AppendReplacementAppendTailDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

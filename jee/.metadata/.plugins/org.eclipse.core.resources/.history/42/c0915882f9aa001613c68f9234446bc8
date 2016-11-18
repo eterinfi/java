@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.io.*, java.util.*" %>
+<%
+  // 获取 session 创建时间
+  Date createTime = new Date(session.getCreationTime());
+
+  // 获取最后访问页面的时间
+  Date lastAccessTime = new Date(session.getLastAccessedTime());
+  
+  String title = "再次访问菜鸟教程实例";
+  Integer visitCount = new Integer(0);
+  String visitCountKey = new String("visitCount");
+  String userIDKey = new String("userID");
+  String userID = new String("ABCD");
+  
+  //
+%>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

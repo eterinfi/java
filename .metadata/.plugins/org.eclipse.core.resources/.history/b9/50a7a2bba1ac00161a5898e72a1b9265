@@ -1,0 +1,9 @@
+package data.type.string;
+
+public class EqualsDemo {
+	public static void main(String[] args) {
+		String str1 = new String("runoob");
+		String str2 = str1;
+		String str3 = new String("runoob");
+	}
+}

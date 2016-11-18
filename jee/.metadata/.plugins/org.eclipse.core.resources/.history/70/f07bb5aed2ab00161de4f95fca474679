@@ -1,0 +1,25 @@
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>Example TLD</short-name>
+  <tag>
+    <name>Hello1</name>
+    <tag-class>jsp.demo.HelloTag1</tag-class>
+    <body-content>empty</body-content>
+  </tag>
+  <tag>
+    <name>Hello2</name>
+    <tag-class>jsp.demo.HelloTag2</tag-class>
+    <body-content>scriptless</body-content>
+  </tag>
+  <tag>
+    <name>Hello3</name>
+    <tag-class>jsp.demo.HelloTag3</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+      <name>message</name>
+      <required>false</required>
+      <type>java.lang.String</type>
+    </attribute>
+  </tag>
+</taglib>

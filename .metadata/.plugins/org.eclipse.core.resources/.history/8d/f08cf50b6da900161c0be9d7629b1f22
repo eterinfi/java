@@ -1,0 +1,16 @@
+package datatype.generics;
+
+public class GenericClassDemo<T> {
+	
+	private T t;
+	
+	public void add(T t) {
+		this.t = t;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

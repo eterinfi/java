@@ -1,0 +1,49 @@
+package web.mail.smtp;
+
+import java.util.*;
+import javax.mail.*;
+import javax.mail.internet.*;
+
+public class SendAuthEmail {
+	public static void main(String[] args) {
+		// Recipient's addresses
+		String to = "gaorui84@gmail.com";
+		String cc = "ryangao@msn.com";
+		// Sender's address
+		String from = "1710099.com";
+		// Sender's host name
+		String host = "smtp.qq.com"; // QQ mail server
+		// Get system properties
+		Properties properties = System.getProperties();
+		// Set mail server
+		properties.setProperty("mail.smtp.host", host);
+		// Enable password authentication
+		properties.setProperty("mail.smtp.auth", "true");
+		// Get default session object
+		Session session = Session.getDefaultInstance(properties, new Authenticator(){
+			public PasswordAuthentication getPasswordAuthentication() {
+				// Sender's account username & password(16-byte authcode)
+				return new PasswordAuthentication("1710099@qq.com", "lwbwkwclnvymbjig");
+			}
+		});
+		try {
+			// Create default MimeMessage object
+			MimeMessage message = new MimeMessage(session);
+			// Set header's FROM: field
+			message.setFrom(new InternetAddress(from));
+			// Set header's TO: field
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+			// Set header's CC: field
+			message.addRecipient(Message.RecipientType.CC, new InternetAddress(cc));
+			// Set header's SUBJECT: field
+			message.setSubject("This is the Subject Line!");
+			// Set message body
+			message.setText("This is actual message");
+			// Send message
+			Transport.send(message);
+			System.out.println("Sent message successfully....");
+		} catch (MessagingException mex) {
+			mex.printStackTrace();
+		}
+	}
+}

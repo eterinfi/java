@@ -1,0 +1,3 @@
+public class StudentsBean implements java.io.Serializable {
+
+}

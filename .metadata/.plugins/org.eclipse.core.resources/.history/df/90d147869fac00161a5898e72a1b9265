@@ -1,0 +1,10 @@
+package data.type.string;
+
+public class CompareToDemo {
+	public static void main(String[] args) {
+		String str1 = "Strings";
+		String str2 = "Strings";
+		String str3 = "Strings123";
+
+	}
+}

@@ -1,0 +1,14 @@
+package struct.control.exceptions;
+
+class RemoteException extends Exception {
+	private static final long serialVersionUID = 1L;
+	RemoteException(String message) {
+		super(message);
+	}
+}
+public class ThrowsThrowDemo {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}

@@ -1,0 +1,10 @@
+package data.object.variables;
+
+public class ClassVarDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

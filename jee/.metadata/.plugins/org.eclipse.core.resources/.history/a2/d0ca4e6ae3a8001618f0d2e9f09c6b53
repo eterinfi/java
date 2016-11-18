@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>JSPDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 1. JSP 测试程序 -->
+  <!-- 入口：test.jsp -->
+  
+  <!-- 2. HelloServlet示例程序   -->
+  <!-- 入口：HelloServlet.java -->
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>com.runoob.test.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/HelloServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 3. JSP 生命周期 -->
+  <!-- 入口：life.jsp -->
+  
+  <!-- 4. JSP 示例程序   -->
+  <!-- 入口：hello.jsp -->
+  
+  <!-- 5. JSP 显示日期 -->
+  <!-- 入口：date.jsp -->
+  
+  <!-- 6. JSP If条件判断 -->
+  <!-- 入口： ifelse.jsp -->
+  
+  <!-- 7. JSP Switch条件判断 -->
+  <!-- 入口： switchcase.jsp -->
+  
+  <!-- 8. JSP FOR循环 -->
+  <!-- 入口： for.jsp -->
+  
+  <!-- 9. JSP While循环 -->
+  <!-- 入口： while.jsp -->
+  
+  <!-- 10. JSP include -->
+  <!-- 入口： maini.jsp -->
+  <!-- 调用： date.jsp  -->
+  
+  <!-- 11. JSP 使用  JavaBean -->
+  <!-- 入口：usejavabean.jsp -->
+  <!-- 调用：TestBean.java   -->
+  
+  <!-- 12. JSP forward -->
+  <!-- 入口： mainf.jsp -->
+  <!-- 调用： date.jsp  -->
+  
+  <!-- 13. JSP 动态 XML 元素  -->
+  <!-- 入口：dynamicxml.jsp -->
+  
+  <!-- 14. JSP 文本模板 -->
+  <!-- 入口： textt.jsp -->
+  
+  <!-- 15. JSP HTTP 请求  -->
+  <!-- 入口：request.jsp -->
+  
+</web-app>

@@ -1,0 +1,5 @@
+package core.oop.inheritance;
+
+public class Animal {
+
+}

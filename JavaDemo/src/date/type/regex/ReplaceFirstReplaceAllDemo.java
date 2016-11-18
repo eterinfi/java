@@ -1,0 +1,18 @@
+package date.type.regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class ReplaceFirstReplaceAllDemo {
+	private static String REGEX = "dog";
+	private static String INPUT = "The dog says meow. " + "All dogs say meow.";
+	private static String REPLACE = "cat";
+	public static void main(String[] args) {
+		Pattern p = Pattern.compile(REGEX);
+		Matcher m = p.matcher(INPUT);
+		String OUTPUT1 = m.replaceFirst(REPLACE);
+		String OUTPUT2 = m.replaceAll(REPLACE);
+		System.out.println(OUTPUT1);
+		System.out.println(OUTPUT2);
+	}
+}

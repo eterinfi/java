@@ -1,0 +1,9 @@
+package data.type.array;
+
+public class ArrayDemo6 {
+	public static void main(String[] args) {
+		// 多维数组
+		int a[][] = new int[2][3];
+
+	}
+}

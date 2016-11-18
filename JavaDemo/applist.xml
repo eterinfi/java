@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  JavaDemo 示例程序清单 -->
+<!--   1. Java Hello World 示例程序                                 - 入口：HelloWorld -->
+<!--   2. Java 枚举类型                                             - 入口：data.type.basic.EnumTypeDemo -->
+<!--   3. Java 对象和类 (1)                                         - 入口：core.oop.basic.Puppy -->
+<!--   4. Java 对象和类 (2)                                         - 入口：core.oop.basic.EmployeeTest         | 调用：core.oop.basic.Employee -->
+<!--   5. Java 内置数据类型                                         - 入口：data.type.basic.BuiltinTypesDemo -->
+<!--   6. Java 自动类型转换                                         - 入口：data.type.basic.ImplicitTypeCast -->
+<!--   7. Java 强制类型转换                                         - 入口：data.type.basic.ExplicitTypeCast -->
+<!--   8. Java 局部变量                                             - 入口：data.object.scopes.LocalVarDemo -->
+<!--   9. Java 实例变量(成员变量)                                   - 入口：data.object.scopes.InstanceVarDemo -->
+<!--  10. Java 类变量(静态变量)                                     - 入口：data.object.scopes.ClassVarDemo -->
+<!--  11. Java 修饰符                                               - 入口：data.object.modifiers.ModifiersDemo -->
+<!--  12. Java 算术运算符                                           - 入口：data.object.operators.ArithmeticOpsDemo -->
+<!--  13. Java 自增自减运算符                                       - 入口：data.object.operators.AutoIncDecOpsDemo -->
+<!--  14. Java 关系运算符                                           - 入口：data.object.operators.RelationalOpsDemo -->
+<!--  15. Java 位运算符                                             - 入口：data.object.operators.BitOperatorsDemo -->
+<!--  16. Java 逻辑运算符                                           - 入口：data.object.operators.LogicOperatorsDemo -->
+<!--  17. Java 赋值运算符                                           - 入口：data.object.operators.AssignmentOpsDemo -->
+<!--  18. Java 条件运算符(三元运算符)                               - 入口：data.object.operators.TernaryOperatorsDemo -->
+<!--  19. Java instanceof 运算符                                    - 入口：data.object.operators.InstanceOfDemo -->
+<!--  20. Java while 循环                                           - 入口：struct.control.looping.WhileDemo -->
+<!--  21. Java do...while 循环                                      - 入口：struct.control.looping.DoWhileDemo -->
+<!--  22. Java for 循环                                             - 入口：struct.control.looping.ForDemo -->
+<!--  23. Java foreach 循环                                         - 入口：struct.control.looping.ForeachDemo -->
+<!--  24. Java break 关键字                                         - 入口：struct.control.looping.BreakDemo -->
+<!--  25. Java continue 关键字                                      - 入口：struct.control.looping.ContinueDemo -->
+<!--  26. Java if 语句                                              - 入口：struct.control.branching.IfDemo -->
+<!--  27. Java if...else 语句                                       - 入口：struct.control.branching.IfElseDemo -->
+<!--  28. Java if...else if...else 语句                             - 入口：struct.control.branching.IfElseifElseDemo -->
+<!--  29. Java 嵌套 if 语句                                         - 入口：struct.control.branching.IfIfDemo -->
+<!--  30. Java switch 语句                                          - 入口：struct.control.branching.SwitchDemo -->
+<!--  31. Java Number 类型                                          - 入口：data.type.numbers.NumberDemo -->
+<!--  32. Java Number 类型 xxxValue 方法                            - 入口：data.type.numbers.NumberValueDemo -->
+<!--  33. Java Number 类型 compareTo 方法                           - 入口：data.type.numbers.CompareToDemo -->
+<!--  34. Java Number 类型 equals 方法                              - 入口：data.type.numbers.EqualsDemo -->
+<!--  35. Java Number 类型 valueOf 方法                             - 入口：data.type.numbers.ValueOfDemo -->
+<!--  36. Java Number 类型 toString 方法                            - 入口：data.type.numbers.ToStringDemo -->
+<!--  37. Java Number 类型 parsexxx 方法                            - 入口：data.type.numbers.ParseNumberDemo -->
+<!--  38. Java Number 类型 Math.abs 方法                            - 入口：data.type.numbers.math.AbsDemo -->
+<!--  39. Java Number 类型 Math.ceil/floor 方法                     - 入口：data.type.numbers.math.CeilFloorDemo -->
+<!--  40. Java Number 类型 Math.rint/round 方法                     - 入口：data.type.numbers.math.RintRoundDemo -->
+<!--  41. Java Number 类型 Math.min/max 方法                        - 入口：data.type.numbers.math.MinMaxDemo -->
+<!--  42. Java Number 类型 Math.exp/log 方法                        - 入口：data.type.numbers.math.ExpLogDemo -->
+<!--  43. Java Number 类型 Math.pow/sqrt 方法                       - 入口：data.type.numbers.math.PowSqrtDemo -->
+<!--  44. Java Number 类型 Math.sin/cos/tan 方法                    - 入口：data.type.numbers.math.SinCosTanDemo -->
+<!--  45. Java Number 类型 Math.asin/acos/atan 方法                 - 入口：data.type.numbers.math.AsinAcosAtanDemo -->
+<!--  46. Java Number 类型 Math.atan2 方法                          - 入口：data.type.numbers.math.Atan2Demo -->
+<!--  47. Java Number 类型 Math.toDegrees/toRadians 方法            - 入口：data.type.numbers.math.ToDegreesToRadiansDemo -->
+<!--  48. Java Number 类型 Math.random 方法                         - 入口：data.type.numbers.math.RandomDemo -->
+<!--  49. Java Character 类型                                       - 入口：data.type.character.CharacterDemo -->
+<!--  50. Java Character 类型 isLetter 方法                         - 入口：data.type.character.IsLetterDemo -->
+<!--  51. Java Character 类型 isDigit 方法                          - 入口：data.type.character.IsDigitDemo -->
+<!--  52. Java Character 类型 isWhitespace 方法                     - 入口：data.type.character.IsWhitespaceDemo -->
+<!--  53. Java Character 类型 isUpperCase 方法                      - 入口：data.type.character.IsUpperCaseDemo -->
+<!--  54. Java Character 类型 isLowerCase 方法                      - 入口：data.type.character.IsLowerCaseDemo -->
+<!--  55. Java Character 类型 toUpperCase 方法                      - 入口：data.type.character.ToUpperCaseDemo -->
+<!--  56. Java Character 类型 toLowerCase 方法                      - 入口：data.type.character.ToLowerCaseDemo -->
+<!--  57. Java Character 类型 toString 方法                         - 入口：data.type.character.ToStringDemo -->
+<!--  58. Java String 类型                                          - 入口：data.type.string.StringDemo -->
+<!--  59. Java String 类型 charAt 方法                              - 入口：data.type.string.CharAtDemo -->
+<!--  60. Java String 类型 compareTo 方法                           - 入口：data.type.string.CompareToDemo -->
+<!--  61. Java String 类型 compareToIgnoreCase 方法                 - 入口：data.type.string.CompareToIgnoreCaseDemo -->
+<!--  62. Java String 类型 concat 方法                              - 入口：data.type.string.ConcatDemo -->
+<!--  63. Java String 类型 contentEquals 方法                       - 入口：data.type.string.ContentEqualsDemo -->
+<!--  64. Java String 类型 copyValueOf 方法                         - 入口：data.type.string.CopyValueOfDemo -->
+<!--  65. Java String 类型 endsWith 方法                            - 入口：data.type.string.EndsWithDemo -->
+<!--  66. Java String 类型 equals 方法                              - 入口：data.type.string.EqualsDemo -->
+<!--  67. Java String 类型 equalsIgnoreCase 方法                    - 入口：data.type.string.EqualsIgnoreCaseDemo -->
+<!--  68. Java String 类型 getBytes 方法                            - 入口：data.type.string.GetBytesDemo -->
+<!--  69. Java String 类型 getChars 方法                            - 入口：data.type.string.GetCharsDemo -->
+<!--  70. Java String 类型 hashCode 方法                            - 入口：data.type.string.HashCodeDemo -->
+<!--  71. Java String 类型 indexOf 方法                             - 入口：data.type.string.IndexOfDemo -->
+<!--  72. Java String 类型 intern 方法                              - 入口：data.type.string.InternDemo -->
+<!--  73. Java String 类型 lastIndexOf 方法                         - 入口：data.type.string.LastIndexOfDemo -->
+<!--  74. Java String 类型 length 方法                              - 入口：data.type.string.LengthDemo -->
+<!--  75. Java String 类型 matches 方法                             - 入口：data.type.string.MatchesDemo -->
+<!--  76. Java String 类型 regionMatches 方法                       - 入口：data.type.string.RegionMatchesDemo -->
+<!--  77. Java String 类型 replace 方法                             - 入口：data.type.string.ReplaceDemo -->
+<!--  78. Java String 类型 replaceAll 方法                          - 入口：data.type.string.ReplaceAllDemo -->
+<!--  79. Java String 类型 replaceFirst 方法                        - 入口：data.type.string.ReplaceFirstDemo -->
+<!--  80. Java String 类型 split 方法                               - 入口：data.type.string.SplitDemo -->
+<!--  81. Java String 类型 startsWith 方法                          - 入口：data.type.string.StartsWithDemo -->
+<!--  82. Java String 类型 subSequence 方法                         - 入口：data.type.string.SubSequenceDemo -->
+<!--  83. Java String 类型 substring 方法                           - 入口：data.type.string.SubstringDemo -->
+<!--  84. Java String 类型 toCharArray 方法                         - 入口：data.type.string.ToCharArrayDemo -->
+<!--  85. Java String 类型 toLowerCase 方法                         - 入口：data.type.string.ToLowerCaseDemo -->
+<!--  86. Java String 类型 toString 方法                            - 入口：data.type.string.ToStringDemo -->
+<!--  87. Java String 类型 toUpperCase 方法                         - 入口：data.type.string.ToUpperCaseDemo -->
+<!--  88. Java String 类型 trim 方法                                - 入口：data.type.string.TrimDemo -->
+<!--  89. Java String 类型 valueOf 方法                             - 入口：data.type.string.ValueOfDemo -->
+<!--  90. Java StringBuffer 类型                                    - 入口：data.type.string.StringBufferDemo -->
+<!--  91. Java 数组(创建)                                           - 入口：date.type.array.ArrayDemo1 -->
+<!--  92. Java 数组(for 循环遍历)                                   - 入口：date.type.array.ArrayDemo2 -->
+<!--  93. Java 数组(foreach 循环遍历)                               - 入口：data.type.array.ArrayDemo3 -->
+<!--  94. Java 数组(作为函数的参数)                                 - 入口：data.type.array.ArrayDemo4 -->
+<!--  95. Java 数组(作为函数的返回值)                               - 入口：data.type.array.ArrayDemo5          | 调用：data.type.array.ArrayDemo4 -->
+<!--  96. Java 多维数组                                             - 入口：data.type.array.ArrayDemo6          | 调用：data.type.array.ArrayDemo4 -->
+<!--  97. Java 日期 Date 类型                                       - 入口：data.type.datetime.DateDemo -->
+<!--  98. Java 使用 SimpleDateFormat 格式化日期                     - 入口：data.type.datetime.SimpleDateFormatDemo -->
+<!--  99. Java 使用 String.format 格式化日期                        - 入口：date.type.datetime.StringFormatDemo -->
+<!-- 100. Java 使用 SimpleDateFormat 解析日期                       - 入口：data.type.array.datetime.SimpleDateFormatParseDemo -->
+<!-- 101. Java 休眠(sleep)                                          - 入口：struct.control.threading.SleepDemo -->
+<!-- 102. Java 测量时间间隔                                         - 入口：data.type.datetime.DiffDemo -->
+<!-- 103. Java 日期 Calendar 类型                                   - 入口：data.type.datetime.CalendarDemo -->
+<!-- 104. Java 日期 GregorianCalendar 类型                          - 入口：data.type.datetime.GregorianCalendarDemo -->
+<!-- 105. Java 正则表达式 Matcher.group 方法                        - 入口：data.type.regex.GroupDemo -->
+<!-- 106. Java 正则表达式 Matcher.start/end 方法                    - 入口：data.type.regex.StartEndDemo -->
+<!-- 107. Java 正则表达式 Matcher.matches/lookingAt 方法            - 入口：data.type.regex.MatchesLookingAtDemo -->
+<!-- 108. Java 正则表达式 Matcher.replaceFirst/replaceAll 方法      - 入口：data.type.regex.ReplaceFirstReplaceAllDemo -->
+<!-- 109. Java 正则表达式 Matcher.appendReplacement/appendTail 方法 - 入口：data.type.regex.AppendReplacementAppendTailDemo -->
+<!-- 110. Java 方法                                                 - 入口：struct.oop.basic.TestMax -->
+<!-- 111. Java 方法(无返回值)                                       - 入口：struct.oop.basic.TestVoidMethod -->
+<!-- 112. Java 方法(传值调用)                                       - 入口：struct.oop.basic.TestPassByValue -->
+<!-- 113. Java 方法(命令行参数)                                     - 入口：struct.oop.basic.CommandLine -->
+<!-- 114. Java 方法(构造方法)                                       - 入口：struct.oop.basic.ConsDemo -->
+<!-- 115. Java 方法(可变参数)                                       - 入口：struct.oop.basic.VarArgsDemo -->
+<!-- 116. Java 方法(销毁方法)                                       - 入口：struct.oop.basic.FinalizeDemo -->
+<!-- 117. Java 控制台输入读取字符                                   - 入口：data.io.console.ReadDemo -->
+<!-- 118. Java 控制台输入读取字符串                                 - 入口：data.io.console.ReadLineDemo -->
+<!-- 119. Java 控制台输出                                           - 入口：data.io.console.WriteDemo -->
+<!-- 120. Java 读写字节数组                                         - 入口：data.io.console.ByteArrayStreamsDemo -->
+<!-- 121. Java 读写文本文件                                         - 入口：data.io.file.DataStreamsDemo -->
+<!-- 122. Java 读写二进制文件                                       - 入口：data.io.file.FileStreamsDemo -->
+<!-- 123. Java 读写 UTF-8 编码二进制文件                            - 入口：data.io.file.FileStreamsWriterDemo -->
+<!-- 124. Java 文件 File 类型                                       - 入口：data.io.file.FileDemo -->
+<!-- 125. Java 文件 FileReader/FileWriter 类型                      - 入口：data.io.file.FileReaderFileWriterDemo -->
+<!-- 126. Java 创建目录                                             - 入口：data.io.file.MkdirsDemo -->
+<!-- 127. Java 读取目录                                             - 入口：data.io.file.ListDemo -->
+<!-- 128. Java 控制台输入读取字符串(Scanner 类型 next 方法)         - 入口：data.io.console.scanner.NextDemo -->
+<!-- 129. Java 控制台输入读取字符串(Scanner 类型 nextLine 方法)     - 入口：data.io.console.scanner.NextLineDemo -->
+<!-- 130. Java 控制台输入读取数值(Scanner 类型 nextxxx 方法)        - 入口：data.io.console.scanner.NextNumbersDemo -->
+<!-- 131. Java 控制台输入读取数值(Scanner 类型 nextDouble 方法)     - 入口：data.io.console.scanner.NextDoubleDemo -->
+<!-- 132. Java 捕获异常(try...catch 语句)                           - 入口：struct.control.exceptions.TryCatchDemo -->
+<!-- 133. Java 多重捕获异常(try...catch...catch... 语句)            - 入口：struct.control.exceptions.TryCatchesDemo -->
+<!-- 134. Java 抛出异常(throw 语句)                                 - 入口：struct.control.exceptions.ThrowDemo | 调用：struct.control.exceptions.InsufficientFundsException -->
+<!-- 135. Java 捕获异常(try...catch...finally 语句)                 - 入口：struct.control.exceptions.TryCatchFinallyDemo -->
+<!-- 136. Java 自定义异常                                           - 入口：struct.control.exceptions.BankDemo  | 调用：struct.control.exceptions.{CheckingAccount, InsufficientFundsException} -->
+<!-- 137. Java 继承(extends)类                                      - 入口：struct.oop.inheritance.ExtendsDemo  | 调用：struct.oop.inheritance.{Animal, Mouse} -->
+<!-- 138. Java 继承实现(implements)接口                             - 入口：struct.oop.inheritance.ImplementsDemo -->
+<!-- 139. Java 继承 this 关键字                                     - 入口：struct.oop.inheritance.ThisDemo -->
+<!-- 140. Java 继承 super 关键字                                    - 入口：struct.oop.inheritance.SuperDemo -->
+<!-- 141. Java 重写(Override)                                       - 入口：struct.oop.polymorphism.OverrideDemo -->
+<!-- 142. Java 重载(Overload)                                       - 入口：struct.oop.polymorphism.OverloadDemo -->
+<!-- 143. Java 多态                                                 - 入口：struct.oop.polymorphism.PolymorphismDemo -->
+<!-- 144. Java 多态虚方法                                           - 入口：struct.oop.polymorphism.VirtualDemo | 调用：struct.oop.polymorphism.{Salary, Employee} -->
+<!-- 145. Java 抽象类                                               - 入口：struct.oop.inheritance.AbstractDemo | 调用：struct.oop.inheritance.{Salary, Employee} -->
+<!-- 146. Java 封装                                                 - 入口：struct.oop.encapsulation.EncapDemo  | 调用：struct.oop.encapsulation.Encap -->
+<!-- 147. Java 接口的实现                                           - 入口：struct.oop.interfacing.MammalDemo   | 调用：struct.oop.interfacing.Animal -->
+<!-- 148. Java 接口的多重继承                                       - 入口：struct.oop.interfacing.EventsDemo   | 调用：struct.oop.interfacing.{Football, Hockey, Sports} -->
+<!-- 149. Java 跨包调用(package)                                    - 入口：struct.oop.interfacing.Boss         | 调用：data.io.file.Employee -->
+<!-- 150. Java 集合 Enumeration 类型                                - 入口：data.type.collections.EnumerationDemo -->
+<!-- 151. Java 集合 Bitset 类型                                     - 入口：data.type.collections.BitSetDemo -->
+<!-- 152. Java 集合 Vector 类型                                     - 入口：data.type.collections.VectorDemo -->
+<!-- 153. Java 集合 Stack 类型                                      - 入口：data.type.collections.StackDemo -->
+<!-- 154. Java 集合 HashMap 类型                                    - 入口：data.type.collections.HashMapDemo -->
+<!-- 155. Java 集合 Hashtable 类型                                  - 入口：data.type.collections.HashtableDemo -->
+<!-- 156. Java 集合 Properties 类型                                 - 入口：data.type.collections.PropertiesDemo -->
+<!-- 157. Java 集合遍历 ArrayList                                   - 入口：data.type.collections.ListTraversalDemo -->
+<!-- 158. Java 集合遍历 HashMap                                     - 入口：data.type.collections.MapTraversalDemo -->
+<!-- 159. Java 泛型方法                                             - 入口：data.type.generics.GenericMethodDemo -->
+<!-- 160. Java 泛型方法继承                                         - 入口：data.type.generics.GenericMethodExtendsDemo -->
+<!-- 161. Java 泛型类                                               - 入口：data.type.generics.GenericClassDemo -->
+<!-- 162. Java 类型通配符                                           - 入口：data.type.generics.WildcardDemo -->
+<!-- 163. Java 序列化对象                                           - 入口：data.io.file.SerializationDemo      | 调用：data.io.file.Employee -->
+<!-- 164. Java 反序列化对象                                         - 入口：data.io.file.DeserializationDemo    | 调用：data.io.file.Employee -->
+<!-- 165. Java 网络连接 Socket 客户端                               - 入口：web.socket.ClientDemo -->
+<!-- 166. Java 网络连接 Socket 服务端                               - 入口：web.socket.ServerDemo -->
+<!-- 167. Java 网络连接 URL 类                                      - 入口：web.url.URLDemo -->
+<!-- 168. Java 网络连接 URLConnection 类                            - 入口：web.url.URLConnectionDemo -->
+<!-- 169. Java 发送电子邮件                                         - 入口：web.mail.SendEmailDemo -->
+<!-- 170. Java 发送超文本电子邮件                                   - 入口：web.mail.SendHTMLEmailDemo -->
+<!-- 171. Java 发送包含附件的电子邮件                               - 入口：web.mail.SendAttachedEmailDemo -->
+<!-- 172. Java 发送需要 SSL 认证的电子邮件                          - 入口：web.mail.SendEmailWithSSLDemo -->
+<!-- 173. Java 多线程(通过实现 Runnable 接口创建线程)               - 入口：struct.control.threading.RunnableDemo -->
+<!-- 174. Java 多线程(通过继承 Thread 类创建线程)                   - 入口：struct.control.threading.ThreadExtendsDemo -->
+<!-- 175. Java 多线程(通过实现 Callable 接口创建线程)               - 入口：struct.control.threading.CallableDemo -->
+<!-- 176. Java 多线程(调用线程方法)                                 - 入口：struct.control.threading.ThreadDemo | 调用：struct.control.threading.{DisplayMessage, GuessANumber} -->
+<!-- 177. Java 访问 MySQL   数据库                                  - 入口：data.io.db.mysql.DBAccess -->
+<!-- 178. Java 访问 MongoDB 数据库 (1) 连接数据库                   - 入口：data.io.db.mongo.DB1Connect -->
+<!-- 179. Java 访问 MongoDB 数据库 (2) 创建集合                     - 入口：data.io.db.mongo.DB2Create -->
+<!-- 180. Java 访问 MongoDB 数据库 (3) 插入文档                     - 入口：data.io.db.mongo.DB3Insert -->
+<!-- 181. Java 访问 MongoDB 数据库 (4) 检索文档                     - 入口：data.io.db.mongo.DB4Select -->
+<!-- 182. Java 访问 MongoDB 数据库 (5) 更新文档                     - 入口：data.io.db.mongo.DB5Update -->
+<!-- 183. Java 访问 MongoDB 数据库 (6) 删除文档                     - 入口：data.io.db.mongo.DB6Delete -->
+<!-- 184. Java 访问 SQLite  数据库 (1) 连接数据库                   - 入口：data.io.db.sqlite.DB1Connect -->
+<!-- 185. Java 访问 SQLite  数据库 (2) 创建表                       - 入口：data.io.db.sqlite.DB2Create --> 
+<!-- 186. Java 访问 SQLite  数据库 (3) 插入记录                     - 入口：data.io.db.sqlite.DB3Insert --> 
+<!-- 187. Java 访问 SQLite  数据库 (4) 检索记录                     - 入口：data.io.db.sqlite.DB4Select --> 
+<!-- 188. Java 访问 SQLite  数据库 (5) 更新记录                     - 入口：data.io.db.sqlite.DB5Update --> 
+<!-- 189. Java 访问 SQLite  数据库 (6) 删除记录                     - 入口：data.io.db.sqlite.DB6Delete -->

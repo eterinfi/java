@@ -1,0 +1,14 @@
+package data.object.variables;
+
+public class LocalVarDemo1 {
+	public void pupAge() {
+		int age;
+		age = age + 7;
+		System.out.println("小狗的年龄：" + age);
+	}
+	
+	public static void main(String[] args) {
+		LocalVarDemo1 test = new LocalVarDemo1();
+		test.pupAge();
+	}
+}

@@ -1,0 +1,11 @@
+1479004541907	Rename type 'Mongo1Connect'
+1479004629220	Rename type 'Mongo1ConnectAuth'
+1479004638978	Rename type 'Mongo2Create'
+1479004651990	Rename type 'Mongo3Select'
+1479004673667	Rename type 'Mongo4Insert'
+1479004693382	Rename type 'Mongo5Retrieve'
+1479004703415	Rename type 'Mongo6Update'
+1479004716756	Rename type 'Mongo7Delete'
+1479026836473	Move package
+1479026967240	Rename package 'mongo'
+1479026978135	Move package

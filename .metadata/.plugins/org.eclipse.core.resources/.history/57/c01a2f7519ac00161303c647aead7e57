@@ -1,0 +1,30 @@
+package core.oop.inheritance;
+
+class SuperClass {
+	private int n;
+	SuperClass(){
+		System.out.println("SuperClass()");
+	}
+	SuperClass(int n){
+		System.out.println("SuperClass(int n)");
+		this.n = n;
+	}
+}
+class SubClass extends SuperClass{
+	private int n;
+	SubClass(){
+		super(300);
+		System.out.println("Subclass()");
+	}
+	SubClass(int n){
+		System.out.println("Subclass(int n):" + n);
+		this.n = n;
+	}
+}
+public class TestSuperSub {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

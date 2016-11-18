@@ -1,0 +1,19 @@
+package data.type.datetime;
+
+import java.util.*;
+
+public class GregorianCalendarDemo {
+	public static void main(String[] args) {
+		String months[] = {
+				"Jan", "Feb", "Mar", "Apr",
+				"May", "Jun", "Jul", "Aug",
+				"Sep", "Oct", "Nov", "Dec"};
+		int year;
+		/* 初始化 Gregorian 日历
+		 * 使用当前时间和日期
+		 * 默认为本地时间和时区
+		 */
+		GregorianCalendar gcalendar = new GregorianCalendar();
+		
+	}
+}

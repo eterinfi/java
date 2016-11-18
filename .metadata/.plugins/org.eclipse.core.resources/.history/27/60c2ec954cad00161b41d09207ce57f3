@@ -1,0 +1,10 @@
+package data.io.jdbc.sqlite;
+
+public class DB1Connect {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

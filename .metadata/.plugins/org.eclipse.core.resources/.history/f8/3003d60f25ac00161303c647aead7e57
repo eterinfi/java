@@ -1,0 +1,18 @@
+package core.oop.classextends;
+
+public class SuperDemo {
+	public static void main(String[] args) {
+		new Sub().showMessage();
+	}
+}
+
+class Super {
+	int i = 50;
+}
+
+class Sub extends Super {
+	int i = 100;
+	public void showMessage() {
+		System.out.printf("super.i = %d, this.i = %d\n", super.i, this.i);
+	}
+}

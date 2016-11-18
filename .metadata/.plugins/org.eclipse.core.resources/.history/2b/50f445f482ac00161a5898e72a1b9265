@@ -1,0 +1,38 @@
+package data.object.modifiers;
+
+public class VolatileDemo implements Runnable {
+	private Thread t;
+	private String thread;
+	VolatileDemo(String thread) {
+		this.thread = thread;
+		System.out.println("Creating " + thread);
+	}
+	
+	private volatile boolean active;
+	@Override
+	public void run() {
+		active = true;
+		while (active)
+			System.out.println("Running in progress....");
+	}
+	
+	public void stop() {
+		active = false;
+		System.out.println("Thread stopped.");
+	}
+	
+	public void start() {
+		if (t == null) {
+			System.out.println("Starting " + thread);
+			t = new Thread(this, thread);
+			t.start();
+		} else
+			System.out.println(thread + " is running");
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Starting );
+
+	}
+
+}

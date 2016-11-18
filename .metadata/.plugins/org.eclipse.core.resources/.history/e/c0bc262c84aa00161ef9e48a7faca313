@@ -1,0 +1,70 @@
+package data.jdbc.mysql;
+
+import java.sql.*;
+
+public class DBAccess {
+	// JDBC driver name and database URL
+	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	static final String DB_URL = "jdbc:mysql://localhost:3306/RUNOOB";
+	
+	// Database username and password, custom required
+	static final String USER = "root";
+	static final String PASS = "";
+	
+	public static void main(String[] args) {
+		Connection conn = null;
+		Statement stmt = null;
+		try {
+			// Register JDBC driver
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			// Secure connection
+			System.out.println("Connecting to database...");
+			conn = DriverManager.getConnection(DB_URL, USER, PASS);
+			
+			// Execute query
+			System.out.println("Instantiating Statement...");
+			stmt = conn.createStatement();
+			String sql = "SELECT id, name, url FROM websites";
+			ResultSet rs = stmt.executeQuery(sql);
+			
+			// Unfolding database from the result set
+			while (rs.next()) {
+				// Retrieve by field
+				int id = rs.getInt("id");
+				String name = rs.getString("name");
+				String url = rs.getString("url");
+				
+				// Output data
+				System.out.print("ID: " + id);
+				System.out.print(", 站点名称: " + name);
+				System.out.print(", 站点 URL: " + url);
+				System.out.print("\n");
+			}
+			
+			// Shutdown after completion
+			rs.close();
+			stmt.close();
+			conn.close();
+		} catch (SQLException se) {
+			// Handle JDBC error
+			se.printStackTrace();
+		} catch (Exception e) {
+			// Handle Class.forName error
+			e.printStackTrace();
+		} finally {
+			// Shutdown resources
+			try {
+				if (stmt != null) stmt.close();
+			} catch (SQLException se2) {
+				// Do nothing
+			}
+			try {
+				if (conn != null) conn.close();
+			} catch (SQLException se) {
+				se.printStackTrace();
+			}
+		}
+		System.out.println("Goodbye!");
+	}
+}

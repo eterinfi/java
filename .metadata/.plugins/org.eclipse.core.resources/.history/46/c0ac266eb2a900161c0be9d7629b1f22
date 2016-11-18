@@ -1,0 +1,5 @@
+package core.os.threading;
+
+public class GuessANumber extends Thread {
+
+}

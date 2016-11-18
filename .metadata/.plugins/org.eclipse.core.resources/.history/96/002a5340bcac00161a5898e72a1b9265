@@ -1,0 +1,13 @@
+package struct.concurrent.threading;
+
+import java.util.*;
+
+public class SleepDemo {
+	public static void main(String[] args) {
+		try {
+			System.out.println(new Date() + "\n");
+			Thread.sleep(1000 * 3); // 休眠 3 秒
+			System.out.println(new Date() + "\n");
+		}
+	}
+}

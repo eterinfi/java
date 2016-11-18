@@ -1,0 +1,242 @@
+
+11月 12, 2016 11:53:25.45 NEW SESSION
+11月 12, 2016 11:53:25.45 1478922805450	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+11月 12, 2016 11:53:36.21 console.error: commonfix: 
+11月 12, 2016 11:53:36.21   Message: ReferenceError: reason is not defined
+11月 12, 2016 11:53:36.21   Stack:
+11月 12, 2016 11:53:36.21     exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/commonfix/lib/main.js:316:1
+11月 12, 2016 11:53:36.21 unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:58:7
+11月 12, 2016 11:53:36.21 unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:56:3
+11月 12, 2016 11:53:36.21 onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:77:5
+11月 12, 2016 11:53:36.21 Observer<.observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+11月 12, 2016 11:53:36.21 unload@resource://gre/modules/commonjs/toolkit/loader.js:795:3
+11月 12, 2016 11:53:36.22 shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Rui/AppData/Roaming/Mozilla/Firefox/Profiles/qcrd3aam.default/extensions/commonfix@mozillaonline.com.xpi!/bootstrap.js:303:5
+11月 12, 2016 11:53:36.22 this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4785:9
+11月 12, 2016 11:53:36.22 this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2799:15
+11月 12, 2016 11:53:36.22 
+
+11月 14, 2016 24:37:05.88 NEW SESSION
+11月 14, 2016 24:37:05.88 1479055025885	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+11月 14, 2016 24:37:20.88 console.error: aqicn-addon: 
+11月 14, 2016 24:37:20.88   Error opening input stream (invalid filename?): resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/data/js/moment-with-langs.min
+11月 14, 2016 24:37:21.23 console.error: aqicn-addon: 
+11月 14, 2016 24:37:21.23   Message: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+11月 14, 2016 24:37:21.23   Stack:
+11月 14, 2016 24:37:21.23     setReceivers/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/lib/main.js:111:27
+11月 14, 2016 24:37:21.23 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 14, 2016 24:37:21.24 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 14, 2016 24:37:21.24 portEmit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:356:7
+11月 14, 2016 24:37:21.24 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 14, 2016 24:37:21.24 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 14, 2016 24:37:21.24 onContentEvent/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:397:5
+11月 14, 2016 24:37:21.24 delay/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/lang/functional/concurrent.js:38:20
+11月 14, 2016 24:37:21.24 notify@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/timers.js:40:9
+11月 14, 2016 24:37:21.24 
+11月 14, 2016 24:37:32.83 console.error: commonfix: 
+11月 14, 2016 24:37:32.84   Message: ReferenceError: reason is not defined
+11月 14, 2016 24:37:32.84   Stack:
+11月 14, 2016 24:37:32.84     exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/commonfix/lib/main.js:316:1
+11月 14, 2016 24:37:32.84 unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:58:7
+11月 14, 2016 24:37:32.84 unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:56:3
+11月 14, 2016 24:37:32.84 onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:77:5
+11月 14, 2016 24:37:32.84 Observer<.observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+11月 14, 2016 24:37:32.84 unload@resource://gre/modules/commonjs/toolkit/loader.js:795:3
+11月 14, 2016 24:37:32.84 shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Rui/AppData/Roaming/Mozilla/Firefox/Profiles/qcrd3aam.default/extensions/commonfix@mozillaonline.com.xpi!/bootstrap.js:303:5
+11月 14, 2016 24:37:32.84 this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4785:9
+11月 14, 2016 24:37:32.84 this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2799:15
+11月 14, 2016 24:37:32.85 
+
+11月 16, 2016 11:35:38.12 NEW SESSION
+11月 16, 2016 11:35:38.14 1479267338137	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+11月 16, 2016 11:35:46.37 console.error: aqicn-addon: 
+11月 16, 2016 11:35:46.39   Error opening input stream (invalid filename?): resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/data/js/moment-with-langs.min
+11月 16, 2016 11:35:46.82 console.error: aqicn-addon: 
+11月 16, 2016 11:35:46.82   Message: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+11月 16, 2016 11:35:46.82   Stack:
+11月 16, 2016 11:35:46.82     setReceivers/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/lib/main.js:111:27
+11月 16, 2016 11:35:46.82 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 11:35:46.82 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 11:35:46.82 portEmit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:356:7
+11月 16, 2016 11:35:46.84 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 11:35:46.84 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 11:35:46.84 onContentEvent/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:397:5
+11月 16, 2016 11:35:46.84 delay/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/lang/functional/concurrent.js:38:20
+11月 16, 2016 11:35:46.84 notify@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/timers.js:40:9
+11月 16, 2016 11:35:46.84 
+11月 16, 2016 11:35:49.72 console.error: commonfix: 
+11月 16, 2016 11:35:49.73   Message: ReferenceError: reason is not defined
+11月 16, 2016 11:35:49.73   Stack:
+11月 16, 2016 11:35:49.73     exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/commonfix/lib/main.js:316:1
+11月 16, 2016 11:35:49.73 unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:58:7
+11月 16, 2016 11:35:49.73 unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:56:3
+11月 16, 2016 11:35:49.73 onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:77:5
+11月 16, 2016 11:35:49.73 Observer<.observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+11月 16, 2016 11:35:49.73 unload@resource://gre/modules/commonjs/toolkit/loader.js:795:3
+11月 16, 2016 11:35:49.73 shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Rui/AppData/Roaming/Mozilla/Firefox/Profiles/qcrd3aam.default/extensions/commonfix@mozillaonline.com.xpi!/bootstrap.js:303:5
+11月 16, 2016 11:35:49.73 this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4785:9
+11月 16, 2016 11:35:49.73 this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2799:15
+11月 16, 2016 11:35:49.73 
+11月 16, 2016 11:37:01.41 1479267421424	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+11月 16, 2016 11:37:07.69 console.error: aqicn-addon: 
+11月 16, 2016 11:37:07.71   Error opening input stream (invalid filename?): resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/data/js/moment-with-langs.min
+11月 16, 2016 11:37:07.83 console.error: aqicn-addon: 
+11月 16, 2016 11:37:07.83   Message: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+11月 16, 2016 11:37:07.83   Stack:
+11月 16, 2016 11:37:07.83     setReceivers/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/lib/main.js:111:27
+11月 16, 2016 11:37:07.83 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 11:37:07.83 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 11:37:07.83 portEmit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:356:7
+11月 16, 2016 11:37:07.83 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 11:37:07.83 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 11:37:07.83 onContentEvent/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:397:5
+11月 16, 2016 11:37:07.85 delay/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/lang/functional/concurrent.js:38:20
+11月 16, 2016 11:37:07.85 notify@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/timers.js:40:9
+11月 16, 2016 11:37:07.85 
+11月 16, 2016 11:45:00.67 1479267900674	addons.xpi	WARN	Add-on {F32E7E42-9AFA-47CA-A0C4-D07EE651D404} is not correctly signed.
+11月 16, 2016 11:45:00.68 1479267900681	addons.xpi	WARN	Add-on quickprint@hp.com is not correctly signed.
+11月 16, 2016 11:45:00.68 1479267900687	addons.xpi	WARN	Add-on dict@www.youdao.com is not correctly signed.
+11月 16, 2016 11:49:03.45 1479268143451	addons.update-checker	WARN	Update manifest for {F32E7E42-9AFA-47CA-A0C4-D07EE651D404} did not contain an updates property
+11月 16, 2016 11:49:03.58 1479268143584	addons.update-checker	WARN	Update manifest for dict@www.youdao.com did not contain an updates property
+11月 16, 2016 11:49:03.83 1479268143835	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+11月 16, 2016 11:49:03.85 1479268143859	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+11月 16, 2016 11:49:03.97 1479268143970	addons.update-checker	WARN	Update manifest for webcompat@mozilla.org did not contain an updates property
+11月 16, 2016 11:49:04.10 1479268144109	addons.update-checker	WARN	Update manifest for asyncrendering@mozilla.org did not contain an updates property
+11月 16, 2016 11:49:07.70 1479268147712	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+11月 16, 2016 11:51:04.59 1479268264600	addons.xpi	WARN	Add-on {F32E7E42-9AFA-47CA-A0C4-D07EE651D404} is not correctly signed.
+11月 16, 2016 11:51:04.59 1479268264603	addons.xpi	WARN	Add-on quickprint@hp.com is not correctly signed.
+11月 16, 2016 11:51:04.59 1479268264604	addons.xpi	WARN	Add-on dict@www.youdao.com is not correctly signed.
+11月 16, 2016 13:03:31.70 console.error: commonfix: 
+11月 16, 2016 13:03:31.70   Message: ReferenceError: reason is not defined
+11月 16, 2016 13:03:31.70   Stack:
+11月 16, 2016 13:03:31.70     exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/commonfix/lib/main.js:316:1
+11月 16, 2016 13:03:31.70 unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:58:7
+11月 16, 2016 13:03:31.70 unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:56:3
+11月 16, 2016 13:03:31.71 onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:77:5
+11月 16, 2016 13:03:31.71 Observer<.observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+11月 16, 2016 13:03:31.71 unload@resource://gre/modules/commonjs/toolkit/loader.js:795:3
+11月 16, 2016 13:03:31.71 shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Rui/AppData/Roaming/Mozilla/Firefox/Profiles/qcrd3aam.default/extensions/commonfix@mozillaonline.com.xpi!/bootstrap.js:303:5
+11月 16, 2016 13:03:31.71 this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4785:9
+11月 16, 2016 13:03:31.71 this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2799:15
+11月 16, 2016 13:03:31.71 
+11月 16, 2016 14:57:15.40 1479279435416	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+11月 16, 2016 14:57:32.72 console.error: aqicn-addon: 
+11月 16, 2016 14:57:32.72   Error opening input stream (invalid filename?): resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/data/js/moment-with-langs.min
+11月 16, 2016 14:57:33.12 console.error: aqicn-addon: 
+11月 16, 2016 14:57:33.12   Message: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+11月 16, 2016 14:57:33.12   Stack:
+11月 16, 2016 14:57:33.12     setReceivers/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/lib/main.js:111:27
+11月 16, 2016 14:57:33.12 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 14:57:33.12 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 14:57:33.12 portEmit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:356:7
+11月 16, 2016 14:57:33.12 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 14:57:33.12 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 14:57:33.12 onContentEvent/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:397:5
+11月 16, 2016 14:57:33.12 delay/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/lang/functional/concurrent.js:38:20
+11月 16, 2016 14:57:33.12 notify@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/timers.js:40:9
+11月 16, 2016 14:57:33.12 
+11月 16, 2016 14:57:52.99 console.error: CustomizableUI: 
+11月 16, 2016 14:57:52.99   Key element with id 'key_webide' for widget 'webide-button' not found!
+11月 16, 2016 14:58:10.68 console.error: CustomizableUI: 
+11月 16, 2016 14:58:10.68   Key element with id 'key_webide' for widget 'webide-button' not found!
+11月 16, 2016 14:58:38.90 console.error: commonfix: 
+11月 16, 2016 14:58:38.90   Message: ReferenceError: reason is not defined
+11月 16, 2016 14:58:38.90   Stack:
+11月 16, 2016 14:58:38.90     exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/commonfix/lib/main.js:316:1
+11月 16, 2016 14:58:38.90 unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:58:7
+11月 16, 2016 14:58:38.90 unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:56:3
+11月 16, 2016 14:58:38.90 onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:77:5
+11月 16, 2016 14:58:38.90 Observer<.observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+11月 16, 2016 14:58:38.90 unload@resource://gre/modules/commonjs/toolkit/loader.js:795:3
+11月 16, 2016 14:58:38.90 shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Rui/AppData/Roaming/Mozilla/Firefox/Profiles/qcrd3aam.default/extensions/commonfix@mozillaonline.com.xpi!/bootstrap.js:303:5
+11月 16, 2016 14:58:38.90 this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4785:9
+11月 16, 2016 14:58:38.92 this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2799:15
+11月 16, 2016 14:58:38.92 
+11月 16, 2016 14:58:53.42 1479279533425	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+11月 16, 2016 14:59:00.34 console.error: aqicn-addon: 
+11月 16, 2016 14:59:00.34   Error opening input stream (invalid filename?): resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/data/js/moment-with-langs.min
+11月 16, 2016 14:59:00.46 console.error: aqicn-addon: 
+11月 16, 2016 14:59:00.46   Message: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+11月 16, 2016 14:59:00.46   Stack:
+11月 16, 2016 14:59:00.46     setReceivers/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/lib/main.js:111:27
+11月 16, 2016 14:59:00.46 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 14:59:00.46 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 14:59:00.46 portEmit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:356:7
+11月 16, 2016 14:59:00.46 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 14:59:00.46 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 14:59:00.46 onContentEvent/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:397:5
+11月 16, 2016 14:59:00.46 delay/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/lang/functional/concurrent.js:38:20
+11月 16, 2016 14:59:00.46 notify@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/timers.js:40:9
+11月 16, 2016 14:59:00.46 
+11月 16, 2016 14:59:19.10 console.error: commonfix: 
+11月 16, 2016 14:59:19.10   Message: ReferenceError: reason is not defined
+11月 16, 2016 14:59:19.10   Stack:
+11月 16, 2016 14:59:19.10     exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/commonfix/lib/main.js:316:1
+11月 16, 2016 14:59:19.10 unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:58:7
+11月 16, 2016 14:59:19.10 unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:56:3
+11月 16, 2016 14:59:19.10 onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:77:5
+11月 16, 2016 14:59:19.12 Observer<.observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+11月 16, 2016 14:59:19.12 unload@resource://gre/modules/commonjs/toolkit/loader.js:795:3
+11月 16, 2016 14:59:19.12 shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Rui/AppData/Roaming/Mozilla/Firefox/Profiles/qcrd3aam.default/extensions/commonfix@mozillaonline.com.xpi!/bootstrap.js:303:5
+11月 16, 2016 14:59:19.12 this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4785:9
+11月 16, 2016 14:59:19.12 this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2799:15
+11月 16, 2016 14:59:19.12 
+11月 16, 2016 15:01:30.79 1479279690789	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+11月 16, 2016 15:01:36.83 console.error: aqicn-addon: 
+11月 16, 2016 15:01:36.83   Error opening input stream (invalid filename?): resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/data/js/moment-with-langs.min
+11月 16, 2016 15:01:37.00 console.error: aqicn-addon: 
+11月 16, 2016 15:01:37.00   Message: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+11月 16, 2016 15:01:37.00   Stack:
+11月 16, 2016 15:01:37.00     setReceivers/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/lib/main.js:111:27
+11月 16, 2016 15:01:37.00 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 15:01:37.00 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 15:01:37.00 portEmit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:356:7
+11月 16, 2016 15:01:37.00 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 15:01:37.00 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 15:01:37.00 onContentEvent/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:397:5
+11月 16, 2016 15:01:37.00 delay/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/lang/functional/concurrent.js:38:20
+11月 16, 2016 15:01:37.00 notify@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/timers.js:40:9
+11月 16, 2016 15:01:37.00 
+11月 16, 2016 15:09:58.17 console.error: commonfix: 
+11月 16, 2016 15:09:58.18   Message: ReferenceError: reason is not defined
+11月 16, 2016 15:09:58.18   Stack:
+11月 16, 2016 15:09:58.18     exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/commonfix/lib/main.js:316:1
+11月 16, 2016 15:09:58.18 unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:58:7
+11月 16, 2016 15:09:58.18 unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:56:3
+11月 16, 2016 15:09:58.18 onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:77:5
+11月 16, 2016 15:09:58.18 Observer<.observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+11月 16, 2016 15:09:58.18 unload@resource://gre/modules/commonjs/toolkit/loader.js:795:3
+11月 16, 2016 15:09:58.18 shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Rui/AppData/Roaming/Mozilla/Firefox/Profiles/qcrd3aam.default/extensions/commonfix@mozillaonline.com.xpi!/bootstrap.js:303:5
+11月 16, 2016 15:09:58.18 this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4785:9
+11月 16, 2016 15:09:58.19 this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2799:15
+11月 16, 2016 15:09:58.19 
+
+11月 16, 2016 20:48:03.50 NEW SESSION
+11月 16, 2016 20:48:03.50 1479300483504	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+11月 16, 2016 20:48:22.76 console.error: aqicn-addon: 
+11月 16, 2016 20:48:22.76   Error opening input stream (invalid filename?): resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/data/js/moment-with-langs.min
+11月 16, 2016 20:48:23.08 console.error: aqicn-addon: 
+11月 16, 2016 20:48:23.08   Message: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+11月 16, 2016 20:48:23.08   Stack:
+11月 16, 2016 20:48:23.08     setReceivers/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://jid1-jmbmp14lxqaa4a-at-jetpack/aqicn-addon/lib/main.js:111:27
+11月 16, 2016 20:48:23.08 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 20:48:23.08 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 20:48:23.11 portEmit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:356:7
+11月 16, 2016 20:48:23.11 emitOnObject@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:112:9
+11月 16, 2016 20:48:23.11 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:89:38
+11月 16, 2016 20:48:23.11 onContentEvent/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/content/sandbox.js:397:5
+11月 16, 2016 20:48:23.11 delay/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/lang/functional/concurrent.js:38:20
+11月 16, 2016 20:48:23.11 notify@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/timers.js:40:9
+11月 16, 2016 20:48:23.11 
+11月 16, 2016 20:48:43.91 console.error: commonfix: 
+11月 16, 2016 20:48:43.91   Message: ReferenceError: reason is not defined
+11月 16, 2016 20:48:43.91   Stack:
+11月 16, 2016 20:48:43.91     exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/commonfix/lib/main.js:316:1
+11月 16, 2016 20:48:43.91 unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:58:7
+11月 16, 2016 20:48:43.91 unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:56:3
+11月 16, 2016 20:48:43.91 onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:77:5
+11月 16, 2016 20:48:43.91 Observer<.observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+11月 16, 2016 20:48:43.92 unload@resource://gre/modules/commonjs/toolkit/loader.js:795:3
+11月 16, 2016 20:48:43.92 shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Rui/AppData/Roaming/Mozilla/Firefox/Profiles/qcrd3aam.default/extensions/commonfix@mozillaonline.com.xpi!/bootstrap.js:303:5
+11月 16, 2016 20:48:43.92 this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4785:9
+11月 16, 2016 20:48:43.92 this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2799:15
+11月 16, 2016 20:48:43.92 

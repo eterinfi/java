@@ -1,0 +1,23 @@
+package struct.control.exceptions;
+
+import java.io.*;
+public class TryCatchesDemo {
+	public static void main(String[] args) {
+		String fileName = "test.txt";
+		
+		}
+	}
+	int readFile(String fileName) {
+		try {
+			FileInputStream file = new FileInputStream(fileName);
+			x = (byte) file.read();
+			return 0;
+		} catch (FileNotFoundException f) {
+			f.printStackTrace();
+			return -1;
+		} catch (IOException i) {
+			i.printStackTrace();
+			return -1;
+		}
+	}
+}

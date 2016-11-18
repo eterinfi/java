@@ -1,0 +1,5 @@
+package core.oop.interfacing;
+
+public interface Football {
+
+}

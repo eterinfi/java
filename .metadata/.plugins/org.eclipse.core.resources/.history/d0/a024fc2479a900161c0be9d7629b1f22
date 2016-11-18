@@ -1,0 +1,10 @@
+package web.socket;
+
+public class GreetingServer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

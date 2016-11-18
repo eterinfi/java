@@ -1,0 +1,69 @@
+package struct.oop.interfacing;
+
+public class EventsDemo implements Football, Hockey {
+	public String hTeam;
+	public String vTeam;
+	public int hPoints;
+	public int vPoints;
+	public void setHomeTeam(String name) {
+		hTeam = name;
+	}
+	public void setVisitingTeam(String name) {
+		vTeam = name;
+	}
+	public void homeTeamScored(int points) {
+		for(int i = 0; i < points; i++) {
+			System.out.printf("%s GOALs!!!%n", hTeam);
+			hPoints++;
+		}
+	}
+	public void visitingTeamScored(int points) {
+		for(int i = 0; i < points; i++) {
+			System.out.printf("%s GOALs!!!!%n", vTeam);
+			vPoints++;
+		}
+	}
+	public void endOfHalf(int half) {
+		System.out.printf("End of Half %d%n", half);
+		System.out.printf("    %10s %d%n", hTeam, hPoints);
+		System.out.printf("    %10s %d%n", vTeam, vPoints);
+	}
+	public void homeGoalScored() {
+		homeTeamScored(1);
+	}
+	public void visitingGoalScored() {
+		visitingTeamScored(1);
+	}
+	public void endOfPeriod(int period) {
+		System.out.printf("End of Period %d%n", period);
+		System.out.printf("    %10s %d%n", hTeam, hPoints);
+		System.out.printf("    %10s %d%n", vTeam, vPoints);
+	}
+	public void overtimePeriod(int ot) {
+		System.out.printf("End of OT Period %d%n", ot);
+		System.out.printf("    %10s %d%n", hTeam, hPoints);
+		System.out.printf("    %10s %d%n", vTeam, vPoints);
+	}
+	
+	public static void main(String[] args) {
+		Football football = new EventsDemo();
+		football.setHomeTeam("Brazil");
+		football.setVisitingTeam("Italy");
+		football.homeTeamScored(1);
+		football.endOfHalf(1);
+		football.visitingTeamScored(2);
+		football.homeTeamScored(2);
+		football.endOfHalf(2);
+
+		Hockey hockey = new EventsDemo();
+		hockey.setHomeTeam("Blackhawks");
+		hockey.setVisitingTeam("Bruins");
+		hockey.visitingGoalScored();
+		hockey.endOfPeriod(1);
+		hockey.homeGoalScored();
+		hockey.endOfPeriod(2);
+		hockey.endOfPeriod(3);
+		hockey.homeGoalScored();
+		hockey.overtimePeriod(1);
+	}
+}

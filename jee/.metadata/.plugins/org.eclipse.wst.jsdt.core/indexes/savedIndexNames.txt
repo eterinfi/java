@@ -1,0 +1,8 @@
+INDEX VERSION 1.3+C:\Users\Rui\workspace\java\jee\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1659701703.index
+3302606571.index
+1192338127.index
+1863681858.index
+2577732805.index
+1138555288.index
+2404056419.index

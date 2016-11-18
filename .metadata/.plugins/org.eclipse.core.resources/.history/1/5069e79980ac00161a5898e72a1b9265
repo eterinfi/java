@@ -1,0 +1,10 @@
+package data.object.modifiers;
+
+public class StaticModifierDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

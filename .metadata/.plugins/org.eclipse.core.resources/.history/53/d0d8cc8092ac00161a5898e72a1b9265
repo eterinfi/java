@@ -1,0 +1,12 @@
+package data.type.numbers;
+
+public class AbsDemo {
+	public static void main(String[] args) {
+		Integer a = -8;
+		double d = -100;
+		float f = -90;
+		System.
+
+	}
+
+}

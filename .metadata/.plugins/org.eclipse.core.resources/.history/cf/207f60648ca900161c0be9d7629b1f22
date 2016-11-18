@@ -1,0 +1,42 @@
+package web.mail;
+
+import java.util.*;
+import javax.mail.*;
+import javax.mail.internet.*;
+import javax.activation.*;
+
+public class SendEmail {
+	public static void main(String[] args) {
+		// Recipient's addresses
+		String to_1 = "gaorui84@gmail.com";
+		String to_2 = "ryangao@msn.com";
+		// Sender's address
+		String from = "postmaster@localhost";
+		// Sender's host name
+		String host = "localhost";
+		// Get system properties
+		Properties properties = System.getProperties();
+		// Set mail server
+		properties.setProperty("mail.smtp.host", host);
+		// Get default session object
+		Session session = Session.getDefaultInstance(properties);
+		try {
+			// Create default MimeMessage object
+			MimeMessage message = new MimeMessage(session);
+			// Set header's From: field
+			message.setFrom(new InternetAddress(from));
+			// Set header's To: field
+			message.addRecipient(Message.RecipientType.TO,
+					new InternetAddress(to_1, to_2));
+			// Set header's Subject: field
+			message.setSubject("This is the Subject Line!");
+			// Set message body
+			message.setText("This is actual message");
+			// Send message
+			Transport.send(message);
+			System.out.println("Sent message successfully....");
+		} catch (MessagingException mex) {
+			mex.printStackTrace();
+		}
+	}
+}

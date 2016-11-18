@@ -1,0 +1,5 @@
+package core.oop.polymorphism;
+
+public class Salary extends Employee {
+
+}

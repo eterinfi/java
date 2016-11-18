@@ -1,0 +1,3 @@
+package struct.oop.interfacing;
+
+public interface Event {}

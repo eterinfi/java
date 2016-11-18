@@ -1,0 +1,14 @@
+package data.type.date;
+
+import java.util.*;
+import java.text.*;
+
+public class SimpleDateFormatDemo {
+	public static void main(String[] args) {
+		Date dNow = new Date();
+		SimpleDateFormat sdf = 
+				new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+		System.out.println("Current Date: " + sdf.format(dNow));
+
+	}
+}

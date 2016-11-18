@@ -1,0 +1,59 @@
+package web.mail.smtp;
+
+import java.util.*;
+import javax.mail.*;
+import javax.mail.internet.*;
+
+public class SendAuthEmail {
+	public static void main(String[] args) {
+		// Recipient's addresses
+		String to = "gaorui84@gmail.com";
+		String cc = "ryangao@msn.com";
+		// Sender's address
+		String from = "1710099@qq.com";
+		// Sender's host name
+		String host = "smtp.qq.com"; // QQ mail server
+		// Get system properties
+		Properties properties = System.getProperties();
+		// Set mail server
+		properties.setProperty("mail.smtp.host", host);
+		properties.setProperty("mail.smtp.port", "25");
+		// Enable password authentication
+		properties.setProperty("mail.smtp.auth", "true");
+		// Enable TLS & SSL
+		properties.setProperty("mail.smtp.starttls.enable", "true");
+		String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
+		properties.setProperty("mail.smtp.ssl.enable", "true");
+		properties.setProperty("mail.smtp.socketFactory.port", "465"); // or 587
+		properties.setProperty("mail.smtp.socketFactory.class", SSL_FACTORY);
+		properties.setProperty("mail.smtp.socketFactory.fallback", "false");
+		// Get default session object
+		Session session = Session.getDefaultInstance(properties, new Authenticator(){
+			public PasswordAuthentication getPasswordAuthentication() {
+				String id = "1710099@qq.com";   // Sender's username
+				String pw = "lwbwkwclnvymbjig"; // Sender's password or authcode
+				          // fitttcfxjedcbigj
+				return new PasswordAuthentication(id, pw);
+			}
+		});
+		try {
+			// Create default MimeMessage object
+			MimeMessage message = new MimeMessage(session);
+			// Set header's FROM: field
+			message.setFrom(new InternetAddress(from));
+			// Set header's TO: field
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+			// Set header's CC: field
+			message.addRecipient(Message.RecipientType.CC, new InternetAddress(cc));
+			// Set header's SUBJECT: field
+			message.setSubject("This is the Subject Line!");
+			// Set message body
+			message.setText("This is actual message");
+			// Send message
+			Transport.send(message);
+			System.out.println("Sent message successfully....");
+		} catch (MessagingException mex) {
+			mex.printStackTrace();
+		}
+	}
+}

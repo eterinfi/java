@@ -1,0 +1,13 @@
+
+
+public class HelloWorld {
+	/* 第一个 Java 程序
+	 * 它将打印字符串 Hello World
+	 * 这是一个多行注释的示例
+	 */
+	public static void main(String[] args) {
+		// 这是单行注释的示例
+		/* 这个也是单行注释的示例 */
+		System.out.println("Hello World"); // 打印 Hello World
+	}
+}

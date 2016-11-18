@@ -1,0 +1,16 @@
+package date.type.string.regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class MatcherMatchesLookingAt {
+	private static final String REGEX = "foo";
+	private static final String INPUT = "fooooooooooooooooo";
+	private static Pattern pattern;
+	private static Matcher matcher;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}

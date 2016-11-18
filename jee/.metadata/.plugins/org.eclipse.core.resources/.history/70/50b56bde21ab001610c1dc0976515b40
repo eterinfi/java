@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>使用表单发送电子邮件</title>
+</head>
+<body>
+  <h1 align="center">使用表单发送电子邮件</h1>
+  <br />
+  <form action="SendSubmittedEmail.jsp" method="POST">
+    <label><strong>SMTP 邮件服务器</strong></label>
+    <p>
+      <span>　　主机地址：<input type="text" name="host" /></span>
+      <span>　　登陆名称：<input type="text" name="user" /></span>
+      <span>　　登陆密码：<input type="password" name="password" /></span>
+    </p>
+    <br />
+    <label><strong>电子邮件</strong></label>
+    <p>
+      <span>    发件人地址：<input type="text" name="from" /></span>
+      <span>    收件人地址：<input type="text" name="to" /></span>
+    </p>
+    <p>    标题：<input type="text" name="subject" /></p>
+    <textarea name="body" cols="120" rows="24">
+    </textarea>
+    <button type="submit">提交</button><button type="reset">重置</button>
+  </form>
+</body>
+</html>

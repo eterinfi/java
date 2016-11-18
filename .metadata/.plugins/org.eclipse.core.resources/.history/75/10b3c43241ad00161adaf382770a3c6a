@@ -1,0 +1,14 @@
+package data.io.file;
+
+import java.io.*;
+
+public class ByteArrayStreamsDemo {
+	public static void main(String[] args) throws IOException {
+		ByteArrayOutputStream bOutput = new ByteArrayOutputStream(12);
+		while (bOutput.size() != 10)
+			// 获取用户输入值
+			bOutput.write(System.in.read());
+	}
+	byte b [] = bOutput.toByteArray();
+	System
+}

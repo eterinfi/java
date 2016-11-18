@@ -1,0 +1,13 @@
+package data.type.string;
+
+public class MatchesDemo {
+	public static void main(String[] args) {
+		String str = new String("www.runoob.com");
+		System.out.print("返回值为 ");
+		System.out.println(str.matches("(.*)runoob(.*)"));
+		System.out.print("返回值为 ");
+		System.out.println(str.matches("(.*)google(.*)"));
+		System.out.print("返回值为 ");
+		System.out.println(str.matches("www(.*)"));
+	}
+}

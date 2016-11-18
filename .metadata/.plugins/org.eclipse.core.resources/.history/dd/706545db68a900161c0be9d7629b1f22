@@ -1,0 +1,28 @@
+package data.structures;
+
+public class GenericMethodDemo {
+
+	// Generic Method printArray
+	public static < E > void printArray( E[] inputArray ) {
+		// Output array elements
+		for ( E element : inputArray )
+			System.out.printf( "%s ", element );
+		System.out.println();
+	}
+	
+	public static void main(String[] args) {
+		// Create arrays of distinct types: Integer, Double & Character
+		Integer[] intArray = { 1, 2, 3, 4, 5 };
+		Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
+		Character[] charArray = { 'H', 'E', 'L', 'L', 'O' };
+		
+		System.out.println( "Elements of integer array: ");
+		printArray( intArray ); // Pass an integer array
+
+		System.out.println( "Elements of double-precision array: ");
+		printArray( doubleArray ); // Pass a double-precision array
+
+		System.out.println( "Elements of character array: ");
+		printArray( charArray ); // Pass a character array
+	}
+}

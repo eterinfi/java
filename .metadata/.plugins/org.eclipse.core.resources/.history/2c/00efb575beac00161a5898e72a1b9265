@@ -1,0 +1,11 @@
+package data.type.datetime;
+
+import java.util.Calendar;
+
+public class CalendarDemo {
+	public static void main(String[] args) {
+		Calendar c = Calendar.getInstance(); //默认是当前日期
+		// 创建一个代表 2009 年 6 月 12 日的 Calendar 对象
+		c.set(2009, 6 - 1, 12);
+	}
+}

@@ -1,0 +1,48 @@
+package struct.oop.interfacing;
+
+public class EventsDemo implements Football, Hockey {
+	public String hTeam;
+	public String vTeam;
+	public int hPoints;
+	public int vPoints;
+	public void setHomeTeam(String name) {
+		hTeam = name;
+	}
+	public void setVisitingTeam(String name) {
+		vTeam = name;
+	}
+	public void homeTeamScored(int points) {
+		hPoints += points;
+	}
+	public void visitingTeamScored(int points) {
+		vPoints += points;
+	}
+	public void endOfQuarter(int quarter) {
+		System.out.printf("End of Quarter %d%n", quarter);
+		System.out.printf("    %20s %d%n", hTeam, hPoints);
+		System.out.printf("    %20s %d%n", vTeam, vPoints);
+	}
+	public void homeGoalScored() {
+		homeTeamScored(1);
+	}
+	public void visitingGoalScored() {
+		visitingTeamScored(1);
+	}
+	public void endOfPeriod(int period) {
+		System.out.printf("End of Period %d%n", period);
+		System.out.printf("    %20s %d%n", hTeam, hPoints);
+		System.out.printf("    %20s %d%n", vTeam, vPoints);
+	}
+	public void overtimePeriod(int ot) {
+		System.out.printf("End of OT Period %d%n", ot);
+		System.out.printf("    %20s %d%n", hTeam, hPoints);
+		System.out.printf("    %20s %d%n", vTeam, vPoints);
+	}
+	
+	public static void main(String[] args) {
+		Football football = new EventsDemo();
+		Hockey hockey = new EventsDemo();
+		football.setHomeTeam("Brazil");
+		football.setVisitingTeam
+	}
+}

@@ -1,0 +1,13 @@
+package data.type.datetime;
+
+import java.util.Calendar;
+
+public class CalendarDemo {
+	public static void main(String[] args) {
+		Calendar c = Calendar.getInstance(); // 默认是当前日期
+		System.out.println("当前日期：" + c);
+		c.set(2009, 6 - 1, 12); // 设置 Calendar 对象 c 的年、月、日分别为 2009、6、12
+		c.set(Calendar.DATE, 10); // 设置 Calendar 对象的日期为 10
+		c.set(Calendar.YEAR, 2008); // 设置 Calendar 对象的年份为 2008
+	}
+}

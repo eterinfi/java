@@ -1,0 +1,13 @@
+package struct.oop.interfacing;
+
+public class Boss {
+	public void payEmployee(struct.oop.inheritance.Employee e) {
+		e.mailCheck();
+	}
+	public static void main(String args[]) {
+		Boss boss = new Boss();
+		struct.oop.inheritance.Employee gw = new 
+				struct.oop.inheritance.Employee("George, W.", "Houston, TX", 43);
+		boss.payEmployee(gw);
+	}
+}

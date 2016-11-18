@@ -1,0 +1,7 @@
+package web.applet;
+
+import java.applet.Applet;
+
+public class HelloWorldApplet extends Applet {
+
+}

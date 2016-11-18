@@ -1,0 +1,24 @@
+package struct.oop.interfacing;
+
+public class EventsDemo implements Football, Hockey {
+	private String home;
+	private String visiting;
+	public void setHomeTeam(String name) {
+		home = name;
+	}
+	public void setVisitingTeam(String name) {
+		visiting = name;
+	}
+	public void homeTeamScored(int points);
+	public void visitingTeamScored(int points);
+	public void endOfQuarter(int quarter);
+	public void homeGoalScored();
+	public void visitingGoalScored();
+	public void endOfPeriod(int period);
+	public void overtimePeriod(int ot);
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}

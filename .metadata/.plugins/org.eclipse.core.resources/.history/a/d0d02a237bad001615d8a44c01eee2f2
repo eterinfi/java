@@ -1,0 +1,10 @@
+package data.io.db.sqlite;
+
+public class DB3Insert {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

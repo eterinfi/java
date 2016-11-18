@@ -1,0 +1,28 @@
+package data.type.datetime;
+
+import java.util.Calendar;
+
+public class CalendarDemo {
+	public static void main(String[] args) {
+		Calendar c = Calendar.getInstance(); // 默认是当前日期
+		System.out.printf("Current Date: %tc%n", c);
+		c.set(2009, 6 - 1, 12);     // 设置 c 的年份、月份、日期分别为 2009、6、12
+		c.set(Calendar.DATE, 10);   // 设置 c 的日期为 10
+		c.set(Calendar.YEAR, 2008); // 设置 c 的年份为 2008
+		System.out.printf("New Date: %tc%n", c);
+		c.add(Calendar.DATE, 10);   // 设置 c 的日期加上 10 天
+		c.add(Calendar.DATE, -10);  // 设置 c 的日期减去 10 天
+		System.out.printf("New Date: %tc%n", c);
+		int year   = c.get(Calendar.YEAR);        // 读取 c 的年份
+		int month  = c.get(Calendar.MONTH) + 1;   // 读取 c 的月份
+		int date   = c.get(Calendar.DATE);        // 读取 c 的日期
+		int hour   = c.get(Calendar.HOUR_OF_DAY); // 读取 c 的小时
+		int minute = c.get(Calendar.MINUTE);      // 读取 c 的分钟
+		int second = c.get(Calendar.SECOND);      // 读取 c 的秒
+		int day    = c.get(Calendar.DAY_OF_WEEK); /* 读取 c 的星期几
+		注意（与 Date 类区别）：1 = 星期日、2 = 星期一、3 = 星期二，以此类推 */
+		String[] weekday = {"日", "一", "二", "三", "四", "五", "六"};
+		System.out.printf("%d 年 %d 月 %d 日　星期%s　%2d 时 %2d 分 %2d 秒",
+				year, month, date, weekday[day - 1], hour, minute, second);
+	}
+}

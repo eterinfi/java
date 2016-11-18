@@ -1,0 +1,12 @@
+package data.type.string;
+
+public class StringDemo {
+	public static void main(String[] args) {
+		String string = "菜鸟教程";
+		System.out.println(string);
+		System.out.println();
+		char[] helloArray = { 'r', 'u', 'n', 'o', 'o', 'b' };
+		String helloString = new String(helloArray);
+		System.out.println(helloString);;
+	}
+}

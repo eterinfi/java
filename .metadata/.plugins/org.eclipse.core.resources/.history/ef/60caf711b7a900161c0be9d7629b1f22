@@ -1,0 +1,12 @@
+package core.threading;
+
+import java.util.concurrent.Callable;
+
+public class CallableThreading implements Callable<V> {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

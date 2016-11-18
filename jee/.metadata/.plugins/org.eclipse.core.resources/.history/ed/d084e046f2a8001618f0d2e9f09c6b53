@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.io.*,java.util.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+  <h1>使用 <%= request.getMethod()%> 方法读取数据</h1>
+  <ul>
+    <%
+      // 解决中文乱码的问题
+      String name = new String((request.getParameter("name")).getBytes("ISO-8859-1"), "UTF-8");
+    %>
+    <li><b>站点名</b>：<%=request.getParameter("name")%></li>
+    <li><b>网址</b>：<%=request.getParameter("url")%></li>
+  </ul>
+</body>
+</html>

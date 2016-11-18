@@ -1,0 +1,7 @@
+package data.io.file;
+
+public class MkdirsDemo {
+	public static void main(String[] args) {
+		
+	}
+}

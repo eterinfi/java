@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>JSP 连接数据库：DELETE 操作</title>
+</head>
+<body>
+  <h1>JSP 数据库实例 - 菜鸟教程</h1>
+  <!-- JDBC 驱动名及数据库 URL、数据库的用户名与密码需要根据实际情况设置 -->
+  <!-- useUnicode=true&charcterEncoding=utf-8 防止中文乱码 -->
+  <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
+                     url="jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8"
+                     user="root" password="" />
+  <!-- 删除 ID = 6 的数据 -->
+  <sql:update dataSource="${snapshot}" var="count">
+    DELETE FROM websites WHERE id = ?
+    <sql:param value="${6}" />
+  </sql:update>
+  <sql:query dataSource="${snapshot}" var="result">
+    SELECT * FROM websites;
+  </sql:query>
+  <table border="1" width="30%">
+    <tr>
+      <th>ID</th>
+      <th>站点名称</th>
+      <th>站点 URL</th>
+    </tr>
+    <c:forEach var="row" items="${result.rows}"><tr>
+      <td align="center"><c:out value="${row.id}" /></td>
+      <td align="center"><c:out value="${row.name}" /></td>
+      <td><c:out value="${row.url}" /></td>
+    </tr></c:forEach>
+  </table>
+</body>
+</html>

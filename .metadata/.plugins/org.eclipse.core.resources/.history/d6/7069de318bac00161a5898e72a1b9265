@@ -1,0 +1,7 @@
+package core.oop.packaging;
+
+public class Boss {
+	public void payEmployee(core.oop.polymorph.Employee e) {
+		e.mailCheck();
+	}
+}

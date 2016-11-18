@@ -1,0 +1,23 @@
+package data.io.db.sqlite;
+
+import java.sql.*;
+
+public class DB2Create {
+	public static void main(String[] args) {
+		Connection c = null;
+		Statement stmt = null;
+		try {
+			Class.forName("org.sqlite.JDBC");
+			c = DriverManager.getConnection("jdbc:sqlite:test.db");
+			System.out.println("Database opened successfully.");
+			stmt = c.createStatement();
+			String sql = "CREATE TABLE COMPANY" +
+			             "(ID      INT PRIMARY KEY NOT NULL," +
+					     " NAME    TEXT            NOT NULL," +
+			             " AGE     INT             NOT NULL," +
+					     " ADDRESS CHAR(50)," +
+			             " SALARY  REAL)";
+			stmt.executeUpdate(sql);
+		}
+	}
+}

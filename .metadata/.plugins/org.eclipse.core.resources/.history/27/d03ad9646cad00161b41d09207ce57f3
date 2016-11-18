@@ -1,0 +1,13 @@
+package struct.oop.interfacing;
+
+public class Boss {
+	public void payEmployee(struct.oop.polymorphism.Employee e) {
+		e.mailCheck();
+	}
+	public static void main(String args[]) {
+		Boss boss = new Boss();
+		struct.oop.polymorphism.Employee gw = new 
+				struct.oop.polymorphism.Employee("George, W.", "Houston, TX", 43);
+		boss.payEmployee(gw);
+	}
+}

@@ -1,0 +1,10 @@
+package data.type.date;
+
+import java.util.*;
+import java.text.*;
+
+public class SimpleDateFormatParseDemo {
+	public static void main(String[] args) {
+		SimpleDateFormat sdf = new SimpleDateFormat ("yyyy-MM-dd");
+	}
+}

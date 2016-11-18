@@ -1,0 +1,10 @@
+package data.io.file;
+
+import java.io.*;
+public class FileStreamWriterDemo {
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package core.oop.abstractclass;
+
+public class Salary extends Employee {
+
+}

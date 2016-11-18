@@ -1,0 +1,3 @@
+package core.oop.interfacing;
+
+public interface Event {}

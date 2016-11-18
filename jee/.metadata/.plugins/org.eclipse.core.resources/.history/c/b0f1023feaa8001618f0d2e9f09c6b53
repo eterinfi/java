@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <!-- 1. Hello World 示例代码   -->
+  <!-- 入口：/HelloWorld       -->
+  <!-- 调用：HelloWorld.class  -->
+  <servlet>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>com.runoob.test.HelloWorld</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloWorld</servlet-name>
+    <url-pattern>/HelloWorld</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 2. 使用 GET/POST方法读取表单数据 -->
+  <!--  GET 方法入口：   /helloGet.html -->
+  <!-- POST 方法入口: /helloPost.html -->
+  <!-- 调用：                        HelloForm.class -->
+  <servlet>
+    <servlet-name>HelloForm</servlet-name>
+    <servlet-class>com.runoob.test.HelloForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloForm</servlet-name>
+    <url-pattern>/HelloForm</url-pattern>
+  </servlet-mapping>
+
+  <!-- 3. 读取表单复选框数据  -->
+  <!-- 入口：   checkbox.html -->
+  <!-- 调用：CheckBox.class -->
+  <servlet>
+    <servlet-name>CheckBox</servlet-name>
+    <servlet-class>com.runoob.test.CheckBox</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckBox</servlet-name>
+    <url-pattern>/CheckBox</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 4. 读取所有的表单参数     -->
+  <!-- 入口：readparams.html -->
+  <!-- 调用：ReadParams.java -->
+  <servlet>
+    <servlet-name>ReadParams</servlet-name>
+    <servlet-class>com.runoob.test.ReadParams</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadParams</servlet-name>
+    <url-pattern>/ReadParams</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 5. HTTP请求显示Header信息 -->
+  <!-- 入口：DisplayHeader.java -->
+  <servlet>  
+    <servlet-name>DisplayHeader</servlet-name>  
+    <servlet-class>com.runoob.test.DisplayHeader</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>DisplayHeader</servlet-name>  
+    <url-pattern>/DisplayHeader</url-pattern>  
+  </servlet-mapping>
+  
+  <!-- 6. HTTP响应自动刷新Header -->
+  <!-- 入口：  RefreshHeader.java -->
+  <servlet>   
+    <servlet-name>RefreshHeader</servlet-name>   
+    <servlet-class>com.runoob.test.RefreshHeader</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>RefreshHeader</servlet-name>  
+    <url-pattern>/RefreshHeader</url-pattern>  
+  </servlet-mapping>
+  
+  <!-- 7. 发送HTTP错误状态码 -->
+  <!-- 入口：ShowError.java -->
+  <servlet>   
+    <servlet-name>ShowError</servlet-name>   
+    <servlet-class>com.runoob.test.ShowError</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>ShowError</servlet-name>  
+    <url-pattern>/ShowError</url-pattern>  
+  </servlet-mapping>
+  
+  <!-- 8. 使用filter输出Log -->
+  <!-- 调用：LogFilter.java -->
+  <filter>
+    <filter-name>LogFilter</filter-name>
+    <filter-class>com.runoob.test.LogFilter</filter-class>
+    <init-param>
+      <param-name>Site</param-name>
+      <param-value>菜鸟教程</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>LogFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- 9. 处理HTTP错误/异常信息 -->
+  <!-- 调用：ErrorHandler.java -->
+  <servlet>
+    <servlet-name>ErrorHandler</servlet-name>
+    <servlet-class>com.runoob.test.ErrorHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ErrorHandler</servlet-name>
+    <url-pattern>/ErrorHandler</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/ErrorHandler</location>
+  </error-page>
+  
+  <!-- 10. 读取表单设置Cookies -->
+  <!-- 入口：  setcookies.html  -->
+  <!-- 调用：  SetCookies.java  -->
+  <servlet> 
+    <servlet-name>SetCookies</servlet-name>
+    <servlet-class>com.runoob.test.SetCookies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetCookies</servlet-name>
+    <url-pattern>/SetCookies</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 11. 读取  Cookies 内容    -->
+  <!-- 入口：GetCookies.java -->
+  <servlet> 
+    <servlet-name>GetCookies</servlet-name>
+    <servlet-class>com.runoob.test.GetCookies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetCookies</servlet-name>
+    <url-pattern>/GetCookies</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 12. 删除  Cookies 内容    -->
+  <!-- 入口：DelCookies.java -->
+  <servlet> 
+    <servlet-name>DelCookies</servlet-name>
+    <servlet-class>com.runoob.test.DelCookies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelCookies</servlet-name>
+    <url-pattern>/DelCookies</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 13. 追踪 Session会话信息   -->
+  <!-- 入口：SessionTrack.java -->
+  <servlet>  
+    <servlet-name>SessionTrack</servlet-name>
+    <servlet-class>com.runoob.test.SessionTrack</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionTrack</servlet-name>
+    <url-pattern>/SessionTrack</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>15</session-timeout>
+  </session-config>
+  
+  <!-- 14. 访问  MySQL数据库 -->
+  <!-- 入口：DBAccess.java -->
+  <servlet>  
+    <servlet-name>DBAccess</servlet-name>
+    <servlet-class>com.runoob.test.DBAccess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DBAccess</servlet-name>
+    <url-pattern>/DBAccess</url-pattern>
+  </servlet-mapping>
+
+  <!-- 15. 文件上传服务器 -->
+  <!-- 入口：upload.jsp  -->
+  <!-- 调用：Upload.java -->
+  <!-- 调用：message.jsp -->
+  <servlet>
+    <servlet-name>Upload</servlet-name>
+    <servlet-class>com.runoob.test.Upload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Upload</servlet-name>
+    <url-pattern>/Upload</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 16. 显示当前的日期和时间 -->
+  <!-- 入口： CurrentDate.java -->
+  <servlet>
+    <servlet-name>CurrentDate</servlet-name>
+    <servlet-class>com.runoob.test.CurrentDate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CurrentDate</servlet-name>
+    <url-pattern>/CurrentDate</url-pattern>
+  </servlet-mapping>
+
+  <!-- 17. 网页重定向至菜鸟教程  -->
+  <!-- 入口：PageRedirect.java -->
+  <servlet>
+    <servlet-name>PageRedirect</servlet-name>
+    <servlet-class>com.runoob.test.PageRedirect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageRedirect</servlet-name>
+    <url-pattern>/PageRedirect</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 18. 网页点击计数器    -->
+  <!-- 入口：PVCount.java -->
+  <servlet>
+    <servlet-name>PVCount</servlet-name>
+    <servlet-class>com.runoob.test.PVCount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PVCount</servlet-name>
+    <url-pattern>/PVCount</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 19. 网站点击计数器      -->
+  <!-- 调用：HitCount.java -->
+  <filter>
+    <filter-name>HitCount</filter-name>
+    <filter-class>com.runoob.test.HitCount</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>HitCount</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- 20. 自动刷新页面         -->
+  <!-- 入口：Refresh.java -->
+  <servlet>
+    <servlet-name>Refresh</servlet-name>
+    <servlet-class>com.runoob.test.Refresh</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Refresh</servlet-name>
+    <url-pattern>/Refresh</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 21. 发送文本电子邮件    -->
+  <!-- 入口：SendEmail.java -->
+  <servlet>
+    <servlet-name>SendEmail</servlet-name>
+    <servlet-class>com.runoob.test.SendEmail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendEmail</servlet-name>
+    <url-pattern>/SendEmail</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 22. 发送超文本格式电子邮件 -->
+  <!-- 入口： SendHTMLEmail.java -->
+  <servlet>
+    <servlet-name>SendHTMLEmail</servlet-name>
+    <servlet-class>com.runoob.test.SendHTMLEmail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendHTMLEmail</servlet-name>
+    <url-pattern>/SendHTMLEmail</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 23. 发送带附件的文本电子邮件     -->
+  <!-- 入口：SendAttachedEmail.java -->
+  <servlet>
+    <servlet-name>SendAttachedEmail</servlet-name>
+    <servlet-class>com.runoob.test.SendAttachedEmail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendAttachedEmail</servlet-name>
+    <url-pattern>/SendAttachedEmail</url-pattern>
+  </servlet-mapping>
+
+  <!-- 24. Servlet 打包部署  -->
+  <!-- 入口：MyServlet.java -->
+  <servlet>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>com.myorg.MyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 25. 保存Log 到日志文件 -->
+  <!-- 入口：ContextLog.java -->
+  <servlet>
+    <servlet-name>ContextLog</servlet-name>
+	<servlet-class>com.runoob.test.ContextLog</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextLog</servlet-name>
+	<url-pattern>/ContextLog</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 26. 检测语言/区域设置 -->
+  <!-- 入口：GetLocale.java -->
+  <servlet>
+    <servlet-name>GetLocale</servlet-name>
+	<servlet-class>com.runoob.test.GetLocale</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetLocale</servlet-name>
+	<url-pattern>/GetLocale</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 27. 显示西班牙语网页 -->
+  <!-- 入口：Espanyol.java -->
+  <servlet>
+    <servlet-name>Espanyol</servlet-name>
+	<servlet-class>com.runoob.test.Espanyol</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Espanyol</servlet-name>
+    <url-pattern>/Espanyol</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 28. 显示区域设置的日期 -->
+  <!-- 入口：DateLocale.java -->
+  <servlet>
+    <servlet-name>DateLocale</servlet-name>
+	<servlet-class>com.runoob.test.DateLocale</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateLocale</servlet-name>
+	<url-pattern>/DateLocale</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 29. 显示区域设置的货币单位  -->
+  <!-- 入口：CurrencyLocale.java -->
+  <servlet>
+    <servlet-name>CurrencyLocale</servlet-name>
+	<servlet-class>com.runoob.test.CurrencyLocale</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CurrencyLocale</servlet-name>
+	<url-pattern>/CurrencyLocale</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 30. 显示区域设置的百分比单位   -->
+  <!-- 入口：PercentageLocale.java -->
+  <servlet>
+    <servlet-name>PercentageLocale</servlet-name>
+	<servlet-class>com.runoob.test.PercentageLocale</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PercentageLocale</servlet-name>
+	<url-pattern>/PercentageLocale</url-pattern>
+  </servlet-mapping>
+</web-app>

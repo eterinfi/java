@@ -1,0 +1,12 @@
+package data.io.db.redis;
+
+import redis.clients.jedis.Jedis;
+
+public class DB1Connect {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

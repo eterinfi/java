@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>life.jsp</title>
+</head>
+<body>
+  
+  <%!
+    private int initVar = 0;
+    private int serviceVar = 0;
+    private int destroyVar = 0;
+  %>
+  
+  <%!
+    public void jspInit(){
+	    initVar++;
+	    System.out.println("jspInit(): JSP被初始化了" + initVar + "次");
+    }
+    public void jspDestroy(){
+    	destroyVar++;
+    	System.out.println("jspDestroy(): JSP被销毁了" + destroyVar + "次");
+    }
+  %>
+</body>
+</html>

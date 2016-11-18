@@ -1,0 +1,16 @@
+import java.util.ListResourceBundle;
+
+public class Example extends ListResourceBundle {
+
+	@Override
+	protected Object[][] getContents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

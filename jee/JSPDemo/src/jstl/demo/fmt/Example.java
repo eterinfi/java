@@ -1,0 +1,15 @@
+package jstl.demo.fmt;
+
+import java.util.ListResourceBundle;
+
+public class Example extends ListResourceBundle {
+	@Override
+	public Object[][] getContents() {
+		return contents;
+	}
+    static final Object[][] contents = {
+    		{"count.one", "One"},
+    		{"count.two", "Two"},
+    		{"count.three", "Three"},
+    };
+}

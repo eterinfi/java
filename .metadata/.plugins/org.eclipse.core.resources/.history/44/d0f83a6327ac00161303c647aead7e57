@@ -1,0 +1,5 @@
+package core.oop.pkg;
+
+public class Boss {
+
+}

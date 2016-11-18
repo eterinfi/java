@@ -1,0 +1,29 @@
+package web.url;
+
+import java.net.*;
+import java.io.*;
+
+public class URLConnectionDemo {
+	public static void main(String[] args) {
+		try {
+			URL url = new URL("http://www.w3cschool.cc");
+			URLConnection urlConnection = url.openConnection();
+			HttpURLConnection connection = null;
+			if(urlConnection instanceof HttpURLConnection)
+				connection = (HttpURLConnection) urlConnection;
+			else {
+				System.out.println("Please enter an HTTP URL.");
+			    return;
+			}
+			BufferedReader in = new BufferedReader(
+					new InputStreamReader(connection.getInputStream()));
+			String urlString = "";
+			String current;
+			while((current = in.readLine()) != null)
+				urlString += new String(current.getBytes("ISO8859-1"), "UTF-8");
+			System.out.println(urlString);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,29 @@
+package struct.oop.inheritance;
+
+interface A {
+	public void eat();
+	public void sleep();
+}
+
+interface B {
+	public void show();
+}
+
+class C implements A, B {
+	public void eat() {
+		
+	}
+	public void sleep() {
+		
+	}
+	public void show() {
+		
+	}
+}
+public class ImplementsDemo {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

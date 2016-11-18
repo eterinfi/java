@@ -1,0 +1,5 @@
+package struct.control.exceptions;
+
+public class CheckingAccount {
+
+}

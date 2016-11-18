@@ -1,0 +1,36 @@
+package struct.control.exceptions;
+
+class RemoteException extends Exception {
+	private static final long serialVersionUID = 1L;
+	RemoteException() {
+		super("Remote Access Error!");
+	}
+}
+
+class InsufficientFundsException extends Exception {
+	private static final long serialVersionUID = 1L;
+	InsufficientFundsException() {
+		super("Insufficient Funds!");
+	}
+}
+
+public class ThrowsThrowDemo {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void deposit(double amount) throws RemoteException {
+		// Method implementation
+		throw new RemoteException();
+	}
+	
+	public void withdraw(double amount) 
+			throws RemoteException, InsufficientFundsException {
+		// Method implementation
+		if (amount <= 0)
+			throw new InsufficientFundsException();
+		else
+			throw new RemoteException();
+	}
+}

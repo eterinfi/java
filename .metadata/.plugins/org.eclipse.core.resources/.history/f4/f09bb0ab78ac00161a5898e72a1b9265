@@ -1,0 +1,24 @@
+package data.types.generics;
+
+public class GenericClassDemo<T> {
+	private T t;
+	
+	public void set(T t) {
+		this.t = t;
+	}
+	
+	public T get() {
+		return t;
+	}
+
+	public static void main(String[] args) {
+		GenericClassDemo<Integer> integer = new GenericClassDemo<Integer>();
+		GenericClassDemo<String> string = new GenericClassDemo<String>();
+		
+		integer.set(new Integer(10));
+		string.set(new String("Runoob Tutorial"));
+		
+		System.out.printf("Integer value: %d\n\n", integer.get());
+		System.out.printf("String value: %s\n", string.get());
+	}
+}

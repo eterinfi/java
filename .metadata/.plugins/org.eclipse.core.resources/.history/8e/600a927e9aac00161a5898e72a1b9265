@@ -1,0 +1,17 @@
+package data.type.character;
+
+public class CharacterDemo {
+	public static void main(String[] args) {
+		char ch = 'a';
+		// Unicode 字符表现形式
+		char uniChar = '\u039A';
+		// 字符数组
+		char[] charArray = { 'a', 'b', 'c', 'd', 'e' };
+		// 包装类型
+		Character ch1 = new Character('a');
+		// 原始字符 'a' 装箱到 Character 对象 ch 中
+		Character ch2 = 'a';
+		char c = ch1;
+	}
+
+}

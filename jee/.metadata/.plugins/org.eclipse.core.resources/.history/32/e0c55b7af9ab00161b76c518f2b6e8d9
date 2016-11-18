@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- JSP/JSTL 演示程序清单 -->
+
+<!--   1. JSP HelloWorld 示例程序            - 入口：/HelloWorld.jsp -->
+<!--   2. JSP 生命周期演示                   - 入口：/Life.jsp -->
+<!--   3. JSP HelloWorld 英文编码            - 入口：/HelloWorldEN.jsp -->
+<!--   4. JSP HelloWorld 中文编码            - 入口：/HelloWorldZH.jsp -->
+<!--   5. JSP if...else 判断语句             - 入口：/if_else.jsp -->
+<!--   6. JSP switch...case 判断语句         - 入口：/switch_case.jsp -->
+<!--   7. JSP for 循环语句                   - 入口：/for.jsp -->
+<!--   8. JSP while 循环语句                 - 入口：/while.jsp -->
+<!--   9. JSP include 动作元素               - 入口：/include.jsp                                  | 调用：/date.jsp -->
+<!--  10. JSP useBean 动作元素               - 入口：/useBean.jsp                                  | 调用：jsp.demo.TestBean -->
+<!--  11. JSP forward 动作元素               - 入口：/forward.jsp                                  | 调用：/date.jsp -->
+<!--  12. JSP plugin 动作元素                - 入口：/plugin.jsp                                   | 调用：/applet/jsp.demo.MyApplet -->
+<!--  13. JSP 动态定义 XML 元素              - 入口：/dynamicxml.jsp -->
+<!--  14. JSP text 动作元素                  - 入口：/text.jsp -->
+<!--  15. JSP HTTP 请求显示 Header           - 入口：/DisplayHeader.jsp -->
+<!--  16. JSP HTTP 响应自动刷新 Header       - 入口：/RefreshHeader.jsp -->
+<!--  17. JSP 显示 HTTP 错误状态码           - 入口：/ShowError.jsp -->
+<!--  18. JSP 使用 GET 方法读取表单数据      - 入口：/helloGet.html                                | 调用：/HelloForm.jsp -->
+<!--  19. JSP 使用 POST 方法读取表单数据     - 入口：/helloPost.html                               | 调用：/HelloForm.jsp -->
+<!--  20. JSP 读取表单复选框数据             - 入口：/checkbox.html                                | 调用：/CheckBox.jsp -->
+<!--  21. JSP 读取所有的表单参数             - 入口：/readparams.html                              | 调用：/ReadParams.jsp -->
+<!--  22. JSP 使用过滤器输出 Log             -                                                     | 调用：jsp.demo.LogFilter -->
+<!--  23. JSP 读取表单设置 Cookies           - 入口：/setcookies.html                              | 调用：/SetCookies.jsp -->
+<!--  24. JSP 读取 Cookies 内容              - 入口：/GetCookies.jsp -->
+<!--  25. JSP 删除 Cookies 内容              - 入口：/DelCookies.jsp -->
+<!--  26. JSP 追踪 Session 会话信息          - 入口：/SessionTrack.jsp -->
+<!--  27. JSP 文件上传服务器                 - 入口：/upload.jsp                                   | 调用：jsp.demo.Upload, /message.jsp -->
+<!--  28. JSP 显示当前的日期和时间           - 入口：/CurrentDate.jsp -->
+<!--  29. JSP 重定向至其它网页               - 入口：/PageRedirect.jsp -->
+<!--  30. JSP 网页访问量统计                 - 入口：/PVCount.jsp -->
+<!--  31. JSP 自动刷新页面                   - 入口：/Refresh.jsp -->
+<!--  32. JSP 发送电子邮件                   - 入口：/SendEmail.jsp -->
+<!--  33. JSP 发送超文本电子邮件             - 入口：/SendHTMLEmail.jsp -->
+<!--  34. JSP 发送带附件的电子邮件           - 入口：/SendAttachedEmail.jsp -->
+<!--  35. JSP 使用 HTML 表单发送电子邮件     - 入口：/sendemail.html                               | 调用：/SendSubmittedEmail.jsp -->
+<!--  36. JSTL <c:out> 标签                  - 入口：/JSTLDemo/core/c_out.jsp -->
+<!--  37. JSTL <c:set> 标签                  - 入口：/JSTLDemo/core/c_set.jsp -->
+<!--  38. JSTL <c:remove> 标签               - 入口：/JSTLDemo/core/c_remove.jsp -->
+<!--  39. JSTL <c:catch> 标签                - 入口：/JSTLDemo/core/c_catch.jsp -->
+<!--  40. JSTL <c:if> 标签                   - 入口：/JSTLDemo/core/c_if.jsp -->
+<!--  41. JSTL <c:choose> 标签               - 入口：/JSTLDemo/core/c_choose.jsp -->
+<!--  42. JSTL <c:import> 标签               - 入口：/JSTLDemo/core/c_import.jsp -->
+<!--  43. JSTL <c:forEach> 标签              - 入口：/JSTLDemo/core/c_forEach.jsp -->
+<!--  44. JSTL <c:forTokens> 标签            - 入口：/JSTLDemo/core/c_forTokens.jsp -->
+<!--  45. JSTL <c:param> 标签                - 入口：/JSTLDemo/core/c_param.jsp -->
+<!--  46. JSTL <c:redirect> 标签             - 入口：/JSTLDemo/core/c_redirect.jsp -->
+<!--  47. JSTL <c:url> 标签                  - 入口：/JSTLDemo/core/c_url.jsp -->
+<!--  48. JSTL <fmt:formatNumber> 标签       - 入口：/JSTLDemo/fmt/fmt_formatNumber.jsp -->
+<!--  49. JSTL <fmt:parseNumber> 标签        - 入口：/JSTLDemo/fmt/fmt_parseNumber.jsp -->
+<!--  50. JSTL <fmt:formatDate> 标签         - 入口：/JSTLDemo/fmt/fmt_formatDate.jsp -->
+<!--  51. JSTL <fmt:parseDate> 标签          - 入口：/JSTLDemo/fmt/fmt_parseDate.jsp -->
+<!--  52. JSTL <fmt:bundle> 标签             - 入口：/JSTLDemo/fmt/fmt_bundle.jsp                  | 调用：jstl.demo.fmt.Example -->
+<!--  53. JSTL <fmt:setLocale> 标签          - 入口：/JSTLDemo/fmt/fmt_setLocale.jsp               | 调用：jstl.demo.fmt.Example, JSTLDemo.fmt.Example_es_ES -->
+<!--  54. JSTL <fmt:setBundle> 标签          - 入口：/JSTLDemo/fmt/fmt_setBundle.jsp               | 调用：jstl.demo.fmt.Example -->
+<!--  55. JSTL <fmt:timeZone> 标签           - 入口：/JSTLDemo/fmt/fmt_timeZone.jsp -->
+<!--  56. JSTL <fmt:setTimeZone> 标签        - 入口：/JSTLDemo/fmt/fmt_setTimeZone.jsp -->
+<!--  57. JSTL <fmt:message> 标签            - 入口：/JSTLDemo/fmt/fmt_message.jsp>                | 调用：jstl.demo.fmt.Example -->
+<!--  58. JSTL <fmt:requestEncoding> 标签    - 入口：/JSTLDemo/fmt/fmt_requestEncoding.jsp         | 调用：jstl.demo.fmt.Example_es_ES -->
+<!--  59. JSTL <sql:setDataSource> 标签      - 入口：/JSTLDemo/sql/sql_setDataSource.jsp -->
+<!--  60. JSTL <sql:query> 标签              - 入口：/JSTLDemo/sql/sql_query.jsp -->
+<!--  61. JSTL <sql:update> 标签             - 入口：/JSTLDemo/sql/sql_update.jsp -->
+<!--  62. JSTL <sql:param> 标签              - 入口：/JSTLDemo/sql/sql_param.jsp -->
+<!--  63. JSTL <sql:dateParam> 标签          - 入口：/JSTLDemo/sql/sql_dateParam.jsp -->
+<!--  64. JSTL <sql:transaction> 标签        - 入口：/JSTLDemo/sql/sql_transaction.jsp -->
+<!--  65. JSTL <x:out> 标签                  - 入口：/JSTLDemo/xml/x_out.jsp -->
+<!--  66. JSTL <x:parse> 标签                - 入口：/JSTLDemo/xml/x_parse.jsp                     | 调用：/JSTLDemo/xml/books.xml -->
+<!--  67. JSTL <x:set> 标签                  - 入口：/JSTLDemo/xml/x_set.jsp                       | 调用：/JSTLDemo/xml/books.xml -->
+<!--  68. JSTL <x:if> 标签                   - 入口：/JSTLDemo/xml/x_if.jsp                        | 调用：/JSTLDemo/xml/books.xml -->
+<!--  69. JSTL <x:forEach> 标签              - 入口：/JSTLDemo/xml/x_forEach.jsp                   | 调用：/JSTLDemo/xml/books.xml -->
+<!--  70. JSTL <x:choose> 标签               - 入口：/JSTLDemo/xml/x_choose.jsp                    | 调用：/JSTLDemo/xml/books.xml -->
+<!--  71. JSTL <x:transform> 标签            - 入口：/JSTLDemo/xml/x_transform.jsp                 | 调用：/JSTLDemo/xml/books.xml, /JSTLDemo/xml/style1.xsl -->
+<!--  72. JSTL <x:param> 标签                - 入口：/JSTLDemo/xml/x_param.jsp                     | 调用：/JSTLDemo/xml/books.xml, /JSTLDemo/xml/style2.xsl -->
+<!--  73. JSTL fn:contains() 函数            - 入口：/JSTLDemo/functions/fn_contains.jsp -->
+<!--  74. JSTL fn:containsIgnoreCase() 函数  - 入口：/JSTLDemo/functions/fn_containsIgnoreCase.jsp -->
+<!--  75. JSTL fn:endsWith() 函数            - 入口：/JSTLDemo/functions/fn_endsWith.jsp -->
+<!--  76. JSTL fn:escapeXml() 函数           - 入口：/JSTLDemo/functions/fn_escapeXml.jsp -->
+<!--  77. JSTL fn:indexOf() 函数             - 入口：/JSTLDemo/functions/fn_indexOf.jsp -->
+<!--  78. JSTL fn:join() 函数                - 入口：/JSTLDemo/functions/fn_join.jsp -->
+<!--  79. JSTL fn:length() 函数              - 入口：/JSTLDemo/functions/fn_length.jsp -->
+<!--  80. JSTL fn:replace() 函数             - 入口：/JSTLDemo/functions/fn_replace.jsp -->
+<!--  81. JSTL fn:split() 函数               - 入口：/JSTLDemo/functions/fn_split.jsp -->
+<!--  82. JSTL fn:startsWith() 函数          - 入口：/JSTLDemo/functions/fn_startsWith.jsp -->
+<!--  83. JSTL fn:substring() 函数           - 入口：/JSTLDemo/functions/fn_substring.jsp -->
+<!--  84. JSTL fn:substringAfter() 函数      - 入口：/JSTLDemo/functions/fn_substringAfter.jsp -->
+<!--  85. JSTL fn:substringBefore() 函数     - 入口：/JSTLDemo/functions/fn_substringBefore.jsp -->
+<!--  86. JSTL fn:toLowerCase()函数          - 入口：/JSTLDemo/functions/fn_toLowerCase.jsp -->
+<!--  87. JSTL fn:toUpperCase()函数          - 入口：/JSTLDemo/functions/fn_toUpperCase.jsp -->
+<!--  88. JSTL fn:trim() 函数                - 入口：/JSTLDemo/functions/fn_trim.jsp -->
+<!--  89. JSP 访问 MySQL 数据库：SELECT 操作 - 入口：/DBAccess/DB1Select.jsp -->
+<!--  90. JSP 访问 MySQL 数据库：INSERT 操作 - 入口：/DBAccess/DB2Insert.jsp -->
+<!--  91. JSP 访问 MySQL 数据库：DELETE 操作 - 入口：/DBAccess/DB3Delete.jsp -->
+<!--  92. JSP 访问 MySQL 数据库：UPDATE 操作 - 入口：/DBAccess/DB4Update.jsp -->
+<!--  93. JSP 生成 XML                       - 入口：/XMLDemo/makeXML.jsp -->
+<!--  94. JSP 解析 XML                       - 入口：/XMLDemo/parseXML.jsp                         | 调用：/XMLDemo/books.xml -->
+<!--  95. JSP 格式化 XML                     - 入口：/XMLDemo/formatXML.jsp                        | 调用：/XMLDemo/books.xml, /XMLDemo/style.xsl -->
+<!--  96. JSP 访问 JavaBean                  - 入口：/useStudentsBean.jsp                          | 调用：jsp.demo.StudentsBean -->
+<!--  97. JSP 生成空的自定义标签             - 入口：/CustomTag1.jsp                               | 调用：/WEB-INF/custom.tld, jsp.demo.HelloTag1 -->
+<!--  98. JSP 生成包含内容的自定义标签       - 入口：/CustomTag2.jsp                               | 调用：/WEB-INF/custom.tld, jsp.demo.HelloTag2 -->
+<!--  99. JSP 生成包含属性或内容的自定义标签 - 入口：/CustomTag3.jsp                               | 调用：/WEB-INF/custom.tld, jsp.demo.HelloTag3 -->
+<!-- 100. JSP EL 读取参数                   - 入口：/EL_Param.jsp -->
+<!-- 101. JSP EL 读取 Header                - 入口：/EL_Header.jsp -->
+<!-- 102. JSP 抛出异常                      - 入口：/ThrowError.jsp                                | 调用：/ShowError1.jsp 或 /ShowError2.jsp -->
+<!-- 103. JSP 捕获异常                      - 入口：/CatchError.jsp -->
+<!-- 104. JSP 输出调试信息                  - 入口：/DebuggingMessage.jsp -->
+<!-- 105. JSP 使用 JDB Logger 输出调试信息  - 入口：/DebuggingLogger.jsp -->
+<!-- 106. JSP 检测语言/区域设置             - 入口：/DetectLocale.jsp -->
+<!-- 107. JSP 显示西班牙语网页              - 入口：/Espanyol.jsp -->
+<!-- 108. JSP 显示本地格式的日期            - 入口：/DateLocale.jsp -->
+<!-- 109. JSP 显示本地格式的货币单位        - 入口：/CurrencyLocale.jsp -->
+<!-- 110. JSP 显示本地格式的百分比单位      - 入口：/PercentageLocale.jsp -->

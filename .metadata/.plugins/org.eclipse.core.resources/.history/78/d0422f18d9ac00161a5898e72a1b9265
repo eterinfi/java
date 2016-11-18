@@ -1,0 +1,9 @@
+package struct.oop.basic;
+
+public class VarArgsDemo {
+	public static void main(String[] args) {
+		// 调用可变参数的方法
+		printMax(34, 3, 3, 2, 56.5);
+		printMax(new double[]{1, 2, 3});
+	}
+}

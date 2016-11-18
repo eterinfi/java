@@ -1,0 +1,19 @@
+package data.type.string;
+
+public class IndexOfDemo {
+	public static void main(String[] args) {
+		String str = new String("菜鸟教程：www.runoob.com");
+		String subStr1 = new String("runoob");
+		String subStr2 = new String("com");
+		System.out.print();
+		System.out.println();
+		System.out.print();
+		System.out.println();
+		System.out.print();
+		System.out.println();
+		System.out.print();
+		System.out.println();
+		System.out.print();
+		System.out.println();
+	}
+}

@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=JavaDemo/C:\/Program Files\/Java\/jre7\/lib\/rt.jar&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1476762807624"/>
+<typeInfo handle="=JavaDemo/C:\/Program Files\/Java\/jre7\/lib\/rt.jar&lt;java.util.concurrent(Callable.class[Callable" modifiers="1537" timestamp="1476762807624"/>
+<typeInfo handle="=JavaDemo/C:\/Program Files\/Java\/jre7\/lib\/rt.jar&lt;java.applet(Applet.class[Applet" modifiers="33" timestamp="1476762807624"/>
+<typeInfo handle="=JavaDemo/C:\/Program Files\/Java\/jre7\/lib\/rt.jar&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1476762807624"/>
+<typeInfo handle="=JavaDemo/src&lt;struct.oop.interfacing{Animal.java[Animal" modifiers="512" timestamp="1479362401516"/>
+<typeInfo handle="=JavaDemo/src&lt;struct.oop.interfacing{Sports.java[Sports" modifiers="513" timestamp="1479362401452"/>
+</typeInfoHistroy>

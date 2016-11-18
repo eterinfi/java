@@ -1,0 +1,26 @@
+package data.type.character;
+
+public class CharacterDemo {
+	public static void main(String[] args) {
+		char ch = 'a';
+		System.out.println(ch);
+		// Unicode 字符表现形式
+		char uniChar = '\u039A';
+		System.out.println(uniChar);
+		// 字符数组
+		char[] charArray = { 'a', 'b', 'c', 'd', 'e' };
+		System.out.println(charArray);
+		// 包装类型
+		Character ch1 = new Character('a');
+		System.out.println(ch1);
+		// 原始字符 'a' 装箱到 Character 对象 ch2 中
+		Character ch2 = 'a';
+		System.out.println(ch2);
+		// 返回拆箱的值到 c
+		char c = ch2;
+		System.out.println(c);
+		// 转义字符
+		System.out.println("访问\"菜鸟教程!\"");
+	}
+
+}

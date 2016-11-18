@@ -1,0 +1,13 @@
+package struct.control.exceptions;
+
+class RemoteException extends Exception {
+	RemoteException(String message) {
+		super(message);
+	}
+}
+public class ThrowsThrowDemo {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}

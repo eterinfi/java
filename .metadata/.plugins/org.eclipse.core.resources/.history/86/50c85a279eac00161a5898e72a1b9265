@@ -1,0 +1,16 @@
+package data.type.string;
+
+public class StringDemo {
+	public static void main(String[] args) {
+		String string = "菜鸟教程";
+		System.out.println(string);
+		char[] helloArray = { 'r', 'u', 'n', 'o', 'o', 'b' };
+		String helloString = new String(helloArray);
+		System.out.println(helloString);
+		String site = "www.runoob.com";
+		int len = site.length();
+		System.out.println("菜鸟教程网址长度：" + len);
+		System.out.println("我的名字是 ".concat("Runoob"));
+		System.out.println("Hello," + " runoob" + "!");
+	}
+}

@@ -1,0 +1,63 @@
+1479177299065	Delete element
+1479177304650	Delete element
+1479177582792	Rename resource 'test.jsp'
+1479177951018	Rename resource 'life.jsp'
+1479178047953	Rename resource 'jsplife.jsp'
+1479178291418	Rename resource 'hello.jsp'
+1479178353780	Rename resource 'JSPEn.jsp'
+1479178395908	Rename resource 'JSPLife.jsp'
+1479178524455	Delete element
+1479178531361	Rename resource 'HelloWorldEn.jsp'
+1479179409326	Rename resource 'ifelse.jsp'
+1479179540261	Rename resource 'switchcase.jsp'
+1479180090857	Rename resource 'maini.jsp'
+1479180209625	Rename resource 'usejavabean.jsp'
+1479180326705	Rename resource 'mainf.jsp'
+1479180491519	Move file
+1479180498056	Copy compilation unit
+1479180535806	Delete element
+1479180686365	Rename type 'HelloWorldApplet'
+1479181236766	Delete element
+1479181286338	Rename type 'CheckerApplet'
+1479183689184	Rename resource 'textt.jsp'
+1479190653226	Delete element
+1479190883621	Move 'upload.jsp' to 'WebContent'
+1479190885464	Move 'message.jsp' to 'WebContent'
+1479217904821	Copy compilation unit
+1479217911017	Delete element
+1479218363670	Copy compilation unit
+1479218414579	Delete element
+1479218725781	Rename type 'Example'
+1479219031852	Rename type 'Example_EN'
+1479219136396	Rename type 'Example'
+1479219276762	Rename type 'Example_ES'
+1479219308898	Rename type 'Example_En'
+1479269571402	Rename resource 'style.xsl'
+1479273290388	Rename resource 'fn_subStringAfter.jsp'
+1479274819915	Move 'DB1Select.jsp' to 'DBAccess'
+1479275784958	Delete element
+1479275830127	Delete element
+1479276279932	Rename resource 'books.jsp'
+1479277752699	Rename type 'StudentBean'
+1479278966725	Move compilation unit
+1479279020807	Move compilation unit
+1479279118233	Rename resource 'VisitJavaBean.jsp'
+1479279270182	Move compilation unit
+1479279582917	Move compilation unit
+1479279708374	Move compilation unit
+1479280126165	Rename package 'JSTLDemo.fmt'
+1479281196275	Rename resource 'createXML.jsp'
+1479281587111	Rename type 'HelloTag'
+1479281671824	Delete element
+1479282056815	Rename resource 'CustomTag.jsp'
+1479284779407	Rename resource 'AccessRequestParam.jsp'
+1479284903099	Rename resource 'ELRequestParam.jsp'
+1479284912148	Rename resource 'ELResponseParam.jsp'
+1479285630399	Rename resource 'HandleError.jsp'
+1479285659079	Rename resource 'DisplayError1.jsp'
+1479290837207	Rename resource 'GetLocale.jsp'
+1479292826369	Delete element
+1479292893602	Rename resource 'jspDemo_schema.xml'
+1479293069659	Rename resource 'schema.xml'
+1479300245389	Delete element
+1479302018592	Delete element

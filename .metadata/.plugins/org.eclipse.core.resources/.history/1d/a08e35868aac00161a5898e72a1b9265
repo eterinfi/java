@@ -1,0 +1,10 @@
+package data.jdbc.sqlite;
+
+public class DB2Create {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
