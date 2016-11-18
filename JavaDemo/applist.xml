@@ -3,8 +3,8 @@
 <!--  JavaDemo 示例程序清单 -->
 <!--   1. Java Hello World 示例程序                                 - 入口：HelloWorld -->
 <!--   2. Java 枚举类型                                             - 入口：data.type.basic.EnumTypeDemo -->
-<!--   3. Java 对象和类 (1)                                         - 入口：core.oop.basic.Puppy -->
-<!--   4. Java 对象和类 (2)                                         - 入口：core.oop.basic.EmployeeTest         | 调用：core.oop.basic.Employee -->
+<!--   3. Java 对象和类 (1)                                         - 入口：struct.oop.basic.Puppy -->
+<!--   4. Java 对象和类 (2)                                         - 入口：struct.oop.basic.EmployeeTest       | 调用：core.oop.basic.Employee -->
 <!--   5. Java 内置数据类型                                         - 入口：data.type.basic.BuiltinTypesDemo -->
 <!--   6. Java 自动类型转换                                         - 入口：data.type.basic.ImplicitTypeCast -->
 <!--   7. Java 强制类型转换                                         - 入口：data.type.basic.ExplicitTypeCast -->
